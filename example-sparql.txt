@@ -1,0 +1,1 @@
+kg-query/apache-jena-3.14.0/bin/arq --data kg-query/data.ttl --query kg-query/query.rq
