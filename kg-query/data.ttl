@@ -1,0 +1,5 @@
+@prefix kgr: <https://deborrrrrah.github.io/resource/> .
+@prefix kgs: <https://deborrrrrah.github.io/ns#> .
+
+kgr:Sariayu kgr:hasProduct kgr:Lipstick .
+kgr:Lipstick kgs:ukuran "30 ml" .

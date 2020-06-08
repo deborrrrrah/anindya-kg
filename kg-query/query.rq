@@ -1,0 +1,6 @@
+PREFIX kgs: <https://deborrrrrah.github.io/ns#> 
+PREFIX kgr: <https://deborrrrrah.github.io/resource/> 
+
+DESCRIBE ?product
+WHERE
+{ kgr:Sariayu kgr:hasProduct ?product .}  
