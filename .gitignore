@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+query/apache-jena-3.14.0
+query/apache-jena-3.15.0
