@@ -1,61 +1,61 @@
 @prefix akgr: <https://deborrrrrah.github.io/resource/> .
 @prefix akgs: <https://deborrrrrah.github.io/ns#> .
 
-akgr:Emina a akgs:Merk .
+akgr:Emina a akgs:Brand .
 
-akgr:LipCreamMatte a akgs:Produk ;
-  akgs:nama "Lip Cream Matte" ;
-  akgs:ukuran "5.5 gr" ;
-  akgs:varian "01 Chocolava" ;
-  akgs:varian "02 Fuzzy Wuzzy" ;
-  akgs:varian "03 Mauvelous" ;
-  akgs:penggunaan "Bibir" .
+akgr:LipCreamMatte a akgs:Product ;
+  akgs:name "Lip Cream Matte" ;
+  akgs:measurement "5.5 gr" ;
+  akgs:variant "01 Chocolava" ;
+  akgs:variant "02 Fuzzy Wuzzy" ;
+  akgs:variant "03 Mauvelous" ;
+  akgs:usage "Bibir" .
 
-akgr:Emina akgs:memproduksi akgr:LipCreamMatte .
+akgr:Emina akgs:produces akgr:LipCreamMatte .
 
-akgr:SmoochiesLipBalm a akgs:Produk ;
-  akgs:nama "Smoochies Lip Balm" ;
-  akgs:varian "Cucumber Juice" ;
-  akgs:varian "Lemonade" ;
-  akgs:penggunaan "Bibir" .
+akgr:SmoochiesLipBalm a akgs:Product ;
+  akgs:name "Smoochies Lip Balm" ;
+  akgs:variant "Cucumber Juice" ;
+  akgs:variant "Lemonade" ;
+  akgs:usage "Bibir" .
 
-akgr:Emina akgs:memproduksi akgr:SmoochiesLipBalm .
+akgr:Emina akgs:produces akgr:SmoochiesLipBalm .
 
-akgr:Wardah a akgs:Merk .
+akgr:Wardah a akgs:Brand .
 
-akgr:ColorfitVelvetMatteLipMousse a akgs:Produk ;
-  akgs:nama "Colorfit Velvet Matte Lip Mousse" ;
-  akgs:varian "01 Brown Dreamer" ;
-  akgs:varian "02 Joyful Orange" ;
-  akgs:penggunaan "Bibir" .
+akgr:ColorfitVelvetMatteLipMousse a akgs:Product ;
+  akgs:name "Colorfit Velvet Matte Lip Mousse" ;
+  akgs:variant "01 Brown Dreamer" ;
+  akgs:variant "02 Joyful Orange" ;
+  akgs:usage "Bibir" .
 
-akgr:Wardah akgs:memproduksi akgr:ColorfitVelvetMatteLipMousse .
+akgr:Wardah akgs:produces akgr:ColorfitVelvetMatteLipMousse .
 
-akgr:ExclusiveMatteLipCream a akgs:Produk ;
-  akgs:nama "Exclusive Matte Lip Cream" ;
-  akgs:varian "01 Red-dicted" ;
-  akgs:varian "02 Fuschionately" ;
-  akgs:penggunaan "Bibir" .
+akgr:ExclusiveMatteLipCream a akgs:Product ;
+  akgs:name "Exclusive Matte Lip Cream" ;
+  akgs:variant "01 Red-dicted" ;
+  akgs:variant "02 Fuschionately" ;
+  akgs:usage "Bibir" .
 
-akgr:Wardah akgs:memproduksi akgr:ExclusiveMatteLipCream .
+akgr:Wardah akgs:produces akgr:ExclusiveMatteLipCream .
 
-akgr:Sariayu a akgs:Merk .
+akgr:Sariayu a akgs:Brand .
 
-akgr:CompactPowderSPF15 a akgs:Produk ;
-  akgs:nama "Compact Powder SPF15" ;
-  akgs:varian "Kuning Langsat" ;
-  akgs:varian "Kuning Pengantin" ;
-  akgs:penggunaan "Wajah" .
+akgr:CompactPowderSPF15 a akgs:Product ;
+  akgs:name "Compact Powder SPF15" ;
+  akgs:variant "Kuning Langsat" ;
+  akgs:variant "Kuning Pengantin" ;
+  akgs:usage "Wajah" .
 
-akgr:Sariayu akgs:memproduksi akgr:CompactPowderSPF15 .
+akgr:Sariayu akgs:produces akgr:CompactPowderSPF15 .
 
-akgr:AlasBedak a akgs:Produk ;
-  akgs:nama "Alas Bedak" ;
-  akgs:varian "Kuning Langsat" ;
-  akgs:varian "Kuning Pengantin" ;
-  akgs:varian "Sawo Matang" ;
-  akgs:penggunaan "Wajah" ;
-  akgs:ukuran "35 ml" .
+akgr:AlasBedak a akgs:Product ;
+  akgs:name "Alas Bedak" ;
+  akgs:variant "Kuning Langsat" ;
+  akgs:variant "Kuning Pengantin" ;
+  akgs:variant "Sawo Matang" ;
+  akgs:usage "Wajah" ;
+  akgs:measurement "35 ml" .
 
-akgr:Sariayu akgs:memproduksi akgr:AlasBedak .
+akgr:Sariayu akgs:produces akgr:AlasBedak .
 

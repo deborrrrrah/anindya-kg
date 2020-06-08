@@ -2,46 +2,46 @@
   "Emina" : [
       {
         "LipCreamMatte" : {
-          "nama" : "Lip Cream Matte",
-          "ukuran" : "5.5 gr",
-          "varian" : ["01 Chocolava", "02 Fuzzy Wuzzy", "03 Mauvelous"],
-          "penggunaan" : "Bibir"
+          "name" : "Lip Cream Matte",
+          "measurement" : "5.5 gr",
+          "variant" : ["01 Chocolava", "02 Fuzzy Wuzzy", "03 Mauvelous"],
+          "usage" : "Bibir"
         }
       },
       {
         "SmoochiesLipBalm" : {
-          "nama" : "Smoochies Lip Balm",
-          "varian" : ["Cucumber Juice", "Lemonade"],
-          "penggunaan" : "Bibir"
+          "name" : "Smoochies Lip Balm",
+          "variant" : ["Cucumber Juice", "Lemonade"],
+          "usage" : "Bibir"
         }
       }
   ],
   "Wardah" : [
       {
         "ColorfitVelvetMatteLipMousse" : {
-          "nama" : "Colorfit Velvet Matte Lip Mousse",
-          "varian" : ["01 Brown Dreamer", "02 Joyful Orange"],
-          "penggunaan" : "Bibir"
+          "name" : "Colorfit Velvet Matte Lip Mousse",
+          "variant" : ["01 Brown Dreamer", "02 Joyful Orange"],
+          "usage" : "Bibir"
         },
         "ExclusiveMatteLipCream" : {
-          "nama" : "Exclusive Matte Lip Cream",
-          "varian" : ["01 Red-dicted", "02 Fuschionately"],
-          "penggunaan" : "Bibir"
+          "name" : "Exclusive Matte Lip Cream",
+          "variant" : ["01 Red-dicted", "02 Fuschionately"],
+          "usage" : "Bibir"
         }
       }
   ],
   "Sariayu" : [
       {
         "CompactPowderSPF15" : {
-          "nama" : "Compact Powder SPF15",
-          "varian" : ["Kuning Langsat", "Kuning Pengantin"],
-          "penggunaan" : "Wajah"
+          "name" : "Compact Powder SPF15",
+          "variant" : ["Kuning Langsat", "Kuning Pengantin"],
+          "usage" : "Wajah"
         },
         "AlasBedak" : {
-          "nama" : "Alas Bedak",
-          "varian" : ["Kuning Langsat", "Kuning Pengantin", "Sawo Matang"],
-          "penggunaan" : "Wajah",
-          "ukuran" : "35 ml"
+          "name" : "Alas Bedak",
+          "variant" : ["Kuning Langsat", "Kuning Pengantin", "Sawo Matang"],
+          "usage" : "Wajah",
+          "measurement" : "35 ml"
         }
       }
   ]

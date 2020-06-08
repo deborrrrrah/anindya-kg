@@ -56,9 +56,9 @@ class Builder :
 
     RESOURCE_URI = "akgr:"
     SEMANTIC_URI = "akgs:"
-    BRAND_CLASS = "akgs:Merk"
-    PRODUCT_CLASS = "akgs:Produk"
-    PRODUCE_PREDICATE = "akgs:memproduksi"
+    BRAND_CLASS = "akgs:Brand"
+    PRODUCT_CLASS = "akgs:Product"
+    PRODUCE_PREDICATE = "akgs:produces"
     SPACE = " "
     SEMICOLON = ";"
     DOT = "."
@@ -69,8 +69,11 @@ class Builder :
     with open(self.source, 'r') as self.source_file:
       self.source_object = json.loads(self.source_file.read())
 
+    # Brand declaration
     for (brand, items) in self.source_object.items() :
       self.content += RESOURCE_URI + brand + ' a ' + BRAND_CLASS + SPACE + DOT + ENTER + ENTER
+      
+      # Item declaration and its properties
       for item in items :
         for (item_name, item_description) in item.items() :
           self.content += RESOURCE_URI + item_name + ' a ' + PRODUCT_CLASS + SPACE
@@ -82,6 +85,8 @@ class Builder :
                 break
               else : self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
           self.content += DOT + ENTER + ENTER
+          
+          # Item relationsship to brand
           self.content += RESOURCE_URI + brand + SPACE + PRODUCE_PREDICATE + SPACE + RESOURCE_URI + item_name + SPACE + DOT + ENTER + ENTER    
     
     print ('Writing KG to', self.destination)
