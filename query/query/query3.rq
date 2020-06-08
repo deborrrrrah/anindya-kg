@@ -1,6 +1,6 @@
 PREFIX akgs: <https://deborrrrrah.github.io/ns#> 
 PREFIX akgr: <https://deborrrrrah.github.io/resource/> 
 
-SELECT ?product
+DESCRIBE ?product
 WHERE
-{ akgr:Emina akgs:memproduksi ?product .}  
+{ akgr:Sariayu akgs:memproduksi ?product .}  
