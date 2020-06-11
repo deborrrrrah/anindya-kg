@@ -3,7 +3,7 @@
 
 akgr:Emina a akgs:Brand .
 
-akgr:LipCreamMatte a akgs:Product ;
+akgr:EminaLipCreamMatte a akgs:Product ;
   akgs:name "Lip Cream Matte" ;
   akgs:measurement "5.5 gr" ;
   akgs:variant "01 Chocolava" ;
@@ -11,45 +11,45 @@ akgr:LipCreamMatte a akgs:Product ;
   akgs:variant "03 Mauvelous" ;
   akgs:usage "Bibir" .
 
-akgr:Emina akgs:produces akgr:LipCreamMatte .
+akgr:Emina akgs:produces akgr:EminaLipCreamMatte .
 
-akgr:SmoochiesLipBalm a akgs:Product ;
+akgr:EminaSmoochiesLipBalm a akgs:Product ;
   akgs:name "Smoochies Lip Balm" ;
   akgs:variant "Cucumber Juice" ;
   akgs:variant "Lemonade" ;
   akgs:usage "Bibir" .
 
-akgr:Emina akgs:produces akgr:SmoochiesLipBalm .
+akgr:Emina akgs:produces akgr:EminaSmoochiesLipBalm .
 
 akgr:Wardah a akgs:Brand .
 
-akgr:ColorfitVelvetMatteLipMousse a akgs:Product ;
+akgr:WardahColorfitVelvetMatteLipMousse a akgs:Product ;
   akgs:name "Colorfit Velvet Matte Lip Mousse" ;
   akgs:variant "01 Brown Dreamer" ;
   akgs:variant "02 Joyful Orange" ;
   akgs:usage "Bibir" .
 
-akgr:Wardah akgs:produces akgr:ColorfitVelvetMatteLipMousse .
+akgr:Wardah akgs:produces akgr:WardahColorfitVelvetMatteLipMousse .
 
-akgr:ExclusiveMatteLipCream a akgs:Product ;
+akgr:WardahExclusiveMatteLipCream a akgs:Product ;
   akgs:name "Exclusive Matte Lip Cream" ;
   akgs:variant "01 Red-dicted" ;
   akgs:variant "02 Fuschionately" ;
   akgs:usage "Bibir" .
 
-akgr:Wardah akgs:produces akgr:ExclusiveMatteLipCream .
+akgr:Wardah akgs:produces akgr:WardahExclusiveMatteLipCream .
 
 akgr:Sariayu a akgs:Brand .
 
-akgr:CompactPowderSPF15 a akgs:Product ;
+akgr:SariayuCompactPowderSPF15 a akgs:Product ;
   akgs:name "Compact Powder SPF15" ;
   akgs:variant "Kuning Langsat" ;
   akgs:variant "Kuning Pengantin" ;
   akgs:usage "Wajah" .
 
-akgr:Sariayu akgs:produces akgr:CompactPowderSPF15 .
+akgr:Sariayu akgs:produces akgr:SariayuCompactPowderSPF15 .
 
-akgr:AlasBedak a akgs:Product ;
+akgr:SariayuAlasBedak a akgs:Product ;
   akgs:name "Alas Bedak" ;
   akgs:variant "Kuning Langsat" ;
   akgs:variant "Kuning Pengantin" ;
@@ -57,5 +57,5 @@ akgr:AlasBedak a akgs:Product ;
   akgs:usage "Wajah" ;
   akgs:measurement "35 ml" .
 
-akgr:Sariayu akgs:produces akgr:AlasBedak .
+akgr:Sariayu akgs:produces akgr:SariayuAlasBedak .
 
