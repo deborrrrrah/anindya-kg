@@ -1,0 +1,65 @@
+@prefix akgr: <https://deborrrrrah.github.io/resource/> .
+@prefix akgs: <https://deborrrrrah.github.io/ns#> .
+
+akgr:ParagonTechnologyAndInnovation a akgs:Organization .
+
+akgr:EminaLipCreamMatte a akgs:Product ;
+  akgs:name "Lip Cream Matte" ;
+  akgs:measurement "5.5 gr" ;
+  akgs:variant "01 Chocolava" ;
+  akgs:variant "02 Fuzzy Wuzzy" ;
+  akgs:variant "03 Mauvelous" ;
+  akgs:usage "Bibir" ;
+  akgs:brand "Emina" .
+
+akgr:ParagonTechnologyAndInnovation akgs:produces akgr:EminaLipCreamMatte .
+
+akgr:EminaSmoochiesLipBalm a akgs:Product ;
+  akgs:name "Smoochies Lip Balm" ;
+  akgs:variant "Cucumber Juice" ;
+  akgs:variant "Lemonade" ;
+  akgs:usage "Bibir" ;
+  akgs:brand "Emina" .
+
+akgr:ParagonTechnologyAndInnovation akgs:produces akgr:EminaSmoochiesLipBalm .
+
+akgr:WardahColorfitVelvetMatteLipMousse a akgs:Product ;
+  akgs:name "Colorfit Velvet Matte Lip Mousse" ;
+  akgs:variant "01 Brown Dreamer" ;
+  akgs:variant "02 Joyful Orange" ;
+  akgs:usage "Bibir" ;
+  akgs:brand "Wardah" .
+
+akgr:ParagonTechnologyAndInnovation akgs:produces akgr:WardahColorfitVelvetMatteLipMousse .
+
+akgr:WardahExclusiveMatteLipCream a akgs:Product ;
+  akgs:name "Exclusive Matte Lip Cream" ;
+  akgs:variant "01 Red-dicted" ;
+  akgs:variant "02 Fuschionately" ;
+  akgs:usage "Bibir" ;
+  akgs:brand "Wardah" .
+
+akgr:ParagonTechnologyAndInnovation akgs:produces akgr:WardahExclusiveMatteLipCream .
+
+akgr:MarthaTilaarGroup a akgs:Organization .
+
+akgr:SariayuCompactPowderSPF15 a akgs:Product ;
+  akgs:name "Compact Powder SPF15" ;
+  akgs:variant "Kuning Langsat" ;
+  akgs:variant "Kuning Pengantin" ;
+  akgs:usage "Wajah" ;
+  akgs:brand "Sariayu" .
+
+akgr:MarthaTilaarGroup akgs:produces akgr:SariayuCompactPowderSPF15 .
+
+akgr:SariayuAlasBedak a akgs:Product ;
+  akgs:name "Alas Bedak" ;
+  akgs:variant "Kuning Langsat" ;
+  akgs:variant "Kuning Pengantin" ;
+  akgs:variant "Sawo Matang" ;
+  akgs:usage "Wajah" ;
+  akgs:measurement "35 ml" ;
+  akgs:brand "Sariayu" .
+
+akgr:MarthaTilaarGroup akgs:produces akgr:SariayuAlasBedak .
+
