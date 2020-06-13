@@ -6,7 +6,7 @@ Value of the property is string, and so the multivalue property is list of strin
 
 JSON FORMAT 
 {
-  "Brand_1" : [
+  "Organization_1" : [
       {
         "Product_1" : {
           "Property_1" : "Value",
@@ -22,7 +22,7 @@ JSON FORMAT
         }
       }
   ],
-  "Brand_2" : [
+  "Organization_2" : [
       {
         "Product_1" : {
           "Property_1" : "Value",
@@ -56,7 +56,7 @@ class Builder :
 
     RESOURCE_URI = "akgr:"
     SEMANTIC_URI = "akgs:"
-    BRAND_CLASS = "akgs:Brand"
+    BRAND_CLASS = "akgs:Organization"
     PRODUCT_CLASS = "akgs:Product"
     PRODUCE_PREDICATE = "akgs:produces"
     SPACE = " "
