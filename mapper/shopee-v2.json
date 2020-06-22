@@ -665,11 +665,11 @@
             },
             {
                 "token": "4",
-                "label": "4-I-Varian"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Inovasi",
@@ -1121,15 +1121,15 @@
             },
             {
                 "token": "02",
-                "label": "4-I-Varian"
-            },
-            {
-                "token": "My",
                 "label": "4-B-Varian"
             },
             {
+                "token": "My",
+                "label": "4-I-Varian"
+            },
+            {
                 "token": "Bearry",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Mengandung",
@@ -1141,7 +1141,7 @@
             },
             {
                 "token": "essence",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "natural",
@@ -1743,11 +1743,11 @@
             },
             {
                 "token": "4",
-                "label": "4-I-Varian"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Inovasi",
@@ -2249,11 +2249,11 @@
             },
             {
                 "token": "4",
-                "label": "4-I-Varian"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Inovasi",
@@ -3467,7 +3467,7 @@
             },
             {
                 "token": "Hasil",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "olesan",
@@ -5477,11 +5477,11 @@
             },
             {
                 "token": "Lipstick",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Longlasting",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "01",
@@ -7095,15 +7095,15 @@
             },
             {
                 "token": "2.3",
-                "label": "4-I-Varian"
-            },
-            {
-                "token": "g",
                 "label": "5-B-Ukuran"
             },
             {
-                "token": "Formulasi",
+                "token": "g",
                 "label": "5-I-Ukuran"
+            },
+            {
+                "token": "Formulasi",
+                "label": "2-O"
             },
             {
                 "token": "dengan",
@@ -8373,11 +8373,11 @@
             },
             {
                 "token": "14",
-                "label": "4-I-Varian"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Active",
-                "label": "5-B-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Cerise",
@@ -8385,7 +8385,7 @@
             },
             {
                 "token": "2.3",
-                "label": "4-B-Varian"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
@@ -9685,11 +9685,11 @@
             },
             {
                 "token": "2.3",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Wardah",
@@ -11207,11 +11207,11 @@
             },
             {
                 "token": "15",
-                "label": "4-I-Varian"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Rouge",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Red",
@@ -11519,15 +11519,15 @@
             },
             {
                 "token": "Lipstick",
-                "label": "4-I-Varian"
-            },
-            {
-                "token": "17",
                 "label": "3-I-NamaProduk"
             },
             {
-                "token": "Passionate",
+                "token": "17",
                 "label": "4-B-Varian"
+            },
+            {
+                "token": "Passionate",
+                "label": "4-I-Varian"
             },
             {
                 "token": "Red",
@@ -12895,7 +12895,7 @@
             },
             {
                 "token": "14",
-                "label": "4-I-Varian"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Violet",
@@ -12903,7 +12903,7 @@
             },
             {
                 "token": "Pink",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "2.3",
@@ -12911,11 +12911,11 @@
             },
             {
                 "token": "g",
-                "label": "2-O"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Formulasi",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "dengan",
@@ -13259,15 +13259,15 @@
             },
             {
                 "token": "bulu",
-                "label": "2-O"
-            },
-            {
-                "token": "mata",
                 "label": "6-B-Penggunaan"
             },
             {
-                "token": "yang",
+                "token": "mata",
                 "label": "6-I-Penggunaan"
+            },
+            {
+                "token": "yang",
+                "label": "2-O"
             },
             {
                 "token": "lebih",
@@ -13559,7 +13559,7 @@
             },
             {
                 "token": "wardah",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "dengan",
@@ -13567,7 +13567,7 @@
             },
             {
                 "token": "kombinasi",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "teknologi",
@@ -14021,7 +14021,7 @@
             },
             {
                 "token": "kulit",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kering",
@@ -14065,7 +14065,7 @@
             },
             {
                 "token": "kulit",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "yang",
@@ -14119,7 +14119,7 @@
             },
             {
                 "token": "Power",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "untuk",
@@ -14127,11 +14127,11 @@
             },
             {
                 "token": "bulu",
-                "label": "6-I-Penggunaan"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "mata",
-                "label": "2-O"
+                "label": "6-I-Penggunaan"
             },
             {
                 "token": "yang",
@@ -16471,7 +16471,7 @@
             },
             {
                 "token": "kulit",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": ",",
@@ -16557,11 +16557,11 @@
             },
             {
                 "token": "Butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -16689,11 +16689,11 @@
             },
             {
                 "token": "agent",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -16703,11 +16703,11 @@
             },
             {
                 "token": "Everyday",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Luminous",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Compact",
@@ -17045,27 +17045,27 @@
             },
             {
                 "token": "sentuhan",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "akhir",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "make",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "-",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "up",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -17147,15 +17147,15 @@
             },
             {
                 "token": "butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "-",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "butiran",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "halus",
@@ -17183,15 +17183,15 @@
             },
             {
                 "token": "butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "-",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "butiran",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "halus",
@@ -17255,27 +17255,27 @@
             },
             {
                 "token": "sentuhan",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "akhir",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "make",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "-",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "up",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -17357,15 +17357,15 @@
             },
             {
                 "token": "butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "-",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "butiran",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "halus",
@@ -17393,15 +17393,15 @@
             },
             {
                 "token": "butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "-",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "butiran",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "halus",
@@ -17465,27 +17465,27 @@
             },
             {
                 "token": "sentuhan",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "akhir",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "make",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "-",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "up",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -17511,19 +17511,19 @@
             },
             {
                 "token": "Light",
-                "label": "4-B-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Feel",
-                "label": "4-I-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "02",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Golden",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Beige",
@@ -17697,11 +17697,11 @@
             },
             {
                 "token": "Light",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Feel",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "02",
@@ -17717,11 +17717,11 @@
             },
             {
                 "token": "12",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Panduan",
@@ -17907,11 +17907,11 @@
             },
             {
                 "token": "Butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -18047,19 +18047,19 @@
             },
             {
                 "token": "bersih",
-                "label": "5-B-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": ":",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "12",
-                "label": "7-B-Tekstur"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "7-I-Tekstur"
+                "label": "5-I-Ukuran"
             }
         ],
         [
@@ -18675,23 +18675,23 @@
             },
             {
                 "token": "Natural",
-                "label": "5-B-Ukuran"
-            },
-            {
-                "token": "12",
-                "label": "5-I-Ukuran"
-            },
-            {
-                "token": "g",
                 "label": "4-I-Varian"
             },
             {
+                "token": "12",
+                "label": "5-B-Ukuran"
+            },
+            {
+                "token": "g",
+                "label": "5-I-Ukuran"
+            },
+            {
                 "token": "Butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -18763,7 +18763,7 @@
             },
             {
                 "token": "melindungi",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kulit",
@@ -18771,7 +18771,7 @@
             },
             {
                 "token": "wajah",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "dari",
@@ -18799,11 +18799,11 @@
             },
             {
                 "token": "dan",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "kilap",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -18833,11 +18833,11 @@
             },
             {
                 "token": "03",
-                "label": "4-I-Varian"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Sandy",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Beige",
@@ -18853,11 +18853,11 @@
             },
             {
                 "token": "Butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -18985,11 +18985,11 @@
             },
             {
                 "token": "agent",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -19327,11 +19327,11 @@
             },
             {
                 "token": "Butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -19391,19 +19391,19 @@
             },
             {
                 "token": "Tekstur",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "full",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "-",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "coated",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "particle",
@@ -19451,11 +19451,11 @@
             },
             {
                 "token": "kulit",
-                "label": "6-B-Penggunaan"
+                "label": "-O"
             },
             {
                 "token": "wajah",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "menjadi",
@@ -20229,11 +20229,11 @@
             },
             {
                 "token": "wajah",
-                "label": "2-O"
+                "label": "6-B-Penggunaa"
             },
             {
                 "token": "berlenih",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "sehingga",
@@ -20307,11 +20307,11 @@
             },
             {
                 "token": "g",
-                "label": "2-O"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Bedak",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "tabur",
@@ -20635,15 +20635,15 @@
             },
             {
                 "token": "Butiran",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "sangat",
@@ -21577,7 +21577,7 @@
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -21721,15 +21721,15 @@
             },
             {
                 "token": ":",
-                "label": "5-B-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "12",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "7-I-Tekstur"
+                "label": "5-I-Ukuran"
             }
         ],
         [
@@ -22633,7 +22633,7 @@
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -22721,19 +22721,19 @@
             },
             {
                 "token": "tektur",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "full",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "-",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "coated",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "particle",
@@ -22781,11 +22781,11 @@
             },
             {
                 "token": "kulit",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "wajah",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "menjadi",
@@ -22793,7 +22793,7 @@
             },
             {
                 "token": "kering",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -23405,7 +23405,7 @@
             },
             {
                 "token": "cair",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "yang",
@@ -23421,7 +23421,7 @@
             },
             {
                 "token": "mudah",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "dibaurkan",
@@ -23991,7 +23991,7 @@
             },
             {
                 "token": "Powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -24135,15 +24135,15 @@
             },
             {
                 "token": ":",
-                "label": "5-B-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "12",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "7-I-Tekstur"
+                "label": "5-I-Ukuran"
             }
         ],
         [
@@ -24237,7 +24237,7 @@
             },
             {
                 "token": "powder",
-                "label": "2-O"
+                "label": "7-I-Tekstur"
             },
             {
                 "token": "yang",
@@ -24261,11 +24261,11 @@
             },
             {
                 "token": "tekstur",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "wajah",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "terasa",
@@ -24601,7 +24601,7 @@
             },
             {
                 "token": "13",
-                "label": "5-B-Ukuran"
+                "label": "4-B-Varian"
             },
             {
                 "token": ".",
@@ -25177,7 +25177,7 @@
             },
             {
                 "token": "alis",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "yang",
@@ -25229,11 +25229,11 @@
             },
             {
                 "token": "brown",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "dan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "deep",
@@ -25241,11 +25241,11 @@
             },
             {
                 "token": "grey",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": ".",
-                "label": "4-I-Varian"
+                "label": "2-O"
             }
         ],
         [
@@ -25403,7 +25403,7 @@
             },
             {
                 "token": "alis",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "yang",
@@ -25455,11 +25455,11 @@
             },
             {
                 "token": "brown",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "dan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "deep",
@@ -25467,11 +25467,11 @@
             },
             {
                 "token": "grey",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": ".",
-                "label": "4-I-Varian"
+                "label": "2-O"
             }
         ],
         [
@@ -27569,11 +27569,11 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "hingga",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "10",
@@ -28053,7 +28053,7 @@
             },
             {
                 "token": "menjaga",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kelembaban",
@@ -28061,7 +28061,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -28573,11 +28573,11 @@
             },
             {
                 "token": "tampilan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "wajah",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "yang",
@@ -28835,7 +28835,7 @@
             },
             {
                 "token": "menjaga",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kelembaban",
@@ -28843,7 +28843,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -29295,7 +29295,7 @@
             },
             {
                 "token": "menjaga",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kelembaban",
@@ -29303,7 +29303,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -30049,7 +30049,7 @@
             },
             {
                 "token": "menjaga",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kelembaban",
@@ -30057,7 +30057,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -30477,11 +30477,11 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "hingga",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "10",
@@ -30735,7 +30735,7 @@
             },
             {
                 "token": "menjaga",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kelembaban",
@@ -30743,7 +30743,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -31051,11 +31051,11 @@
             },
             {
                 "token": "Instaperfect",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "GLOSS",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "CHIC",
@@ -31317,11 +31317,11 @@
             },
             {
                 "token": "Creator",
-                "label": "5-B-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "4",
-                "label": "4-I-Varian"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
@@ -32247,11 +32247,11 @@
             },
             {
                 "token": "Mousse",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "adalah",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "satu",
@@ -32593,11 +32593,11 @@
             },
             {
                 "token": "di",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "untuk",
@@ -35165,11 +35165,11 @@
             },
             {
                 "token": "Cheek",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lit",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cream",
@@ -35201,11 +35201,11 @@
             },
             {
                 "token": "Cheek",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lit",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cream",
@@ -35289,19 +35289,19 @@
             },
             {
                 "token": "Cherry",
-                "label": "4-I-Varian"
-            },
-            {
-                "token": "Blossoms",
                 "label": "4-B-Varian"
             },
             {
+                "token": "Blossoms",
+                "label": "4-I-Varian"
+            },
+            {
                 "token": "3.5",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "NA",
@@ -35353,11 +35353,11 @@
             },
             {
                 "token": "Cheek",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lit",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Pressed",
@@ -35453,11 +35453,11 @@
             },
             {
                 "token": "3.5",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "NA",
@@ -35495,11 +35495,11 @@
             },
             {
                 "token": "ml",
-                "label": "2-O"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "1",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": ".",
@@ -35619,11 +35619,11 @@
             },
             {
                 "token": "pink",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "dan",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "peach",
@@ -35779,11 +35779,11 @@
             },
             {
                 "token": "10",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "ml",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Cheek",
@@ -35889,11 +35889,11 @@
             },
             {
                 "token": "wajah",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "terlihat",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "lebih",
@@ -36621,11 +36621,11 @@
             },
             {
                 "token": "Bright",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Stuff",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Loose",
@@ -37455,11 +37455,11 @@
             },
             {
                 "token": "3.3",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "1",
@@ -37663,11 +37663,11 @@
             },
             {
                 "token": "3.3",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "NA",
@@ -37679,11 +37679,11 @@
             },
             {
                 "token": "Pop",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Rouge",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Pressed",
@@ -37799,11 +37799,11 @@
             },
             {
                 "token": "Pop",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Rouge",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Pressed",
@@ -37815,31 +37815,31 @@
             },
             {
                 "token": "Shadow",
-                "label": "2-O"
-            },
-            {
-                "token": "Romantic",
                 "label": "3-I-NamaProduk"
             },
             {
-                "token": "3.3",
+                "token": "Romantic",
                 "label": "4-B-Varian"
             },
             {
-                "token": "g",
+                "token": "3.3",
                 "label": "5-B-Ukuran"
             },
             {
-                "token": "NA",
+                "token": "g",
                 "label": "5-I-Ukuran"
             },
             {
+                "token": "NA",
+                "label": "2-O"
+            },
+            {
                 "token": "18141203636",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Pop",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Rouge",
@@ -38381,7 +38381,7 @@
             },
             {
                 "token": "Meringue",
-                "label": "5-B-Ukuran"
+                "label": "4-B-Varian"
             },
             {
                 "token": "12",
@@ -38841,11 +38841,11 @@
             },
             {
                 "token": "natural",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Agent",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Of",
@@ -38853,15 +38853,15 @@
             },
             {
                 "token": "Brow",
-                "label": "5-B-Ukuran"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "1.2",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "2-O"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "NA",
@@ -39343,11 +39343,11 @@
             },
             {
                 "token": "Deep",
-                "label": "4-I-Varian"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Purple",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "0.2",
@@ -39847,11 +39847,11 @@
             },
             {
                 "token": "hasil",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "alis",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "sempurna",
@@ -39947,19 +39947,19 @@
             },
             {
                 "token": "Black",
-                "label": "2-O"
-            },
-            {
-                "token": "0.25",
                 "label": "4-B-Varian"
             },
             {
-                "token": "g",
+                "token": "0.25",
                 "label": "5-B-Ukuran"
             },
             {
-                "token": "NA",
+                "token": "g",
                 "label": "5-I-Ukuran"
+            },
+            {
+                "token": "NA",
+                "label": "2-O"
             },
             {
                 "token": "11151202733",
@@ -40367,11 +40367,11 @@
             },
             {
                 "token": "2.3",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "5-B-Ukuran"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "1",
@@ -40587,137 +40587,137 @@
             },
             {
                 "token": "Fantasy",
-                "label": "5-B-Ukuran"
-            },
-            {
-                "token": "2.3",
-                "label": "5-I-Ukuran"
-            },
-            {
-                "token": "g",
                 "label": "4-I-Varian"
             },
             {
-                "token": "NA",
+                "token": "2.3",
                 "label": "5-B-Ukuran"
+            },
+            {
+                "token": "g",
+                "label": "5-I-Ukuran"
+            },
+            {
+                "token": "NA",
+                "label": "2-O"
             },
             {
                 "token": "18171302220",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "Soulmatte",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lipstick",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "04",
-                "label": "3-B-NamaProduk"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Love",
-                "label": "3-I-NamaProduk"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Spell",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "2.3",
-                "label": "4-I-Varian"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "g",
-                "label": "4-I-Varian"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "NA",
-                "label": "5-B-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "18161304728",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "Soulmatte",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lipstick",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "05",
-                "label": "3-B-NamaProduk"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Feathers",
-                "label": "3-I-NamaProduk"
-            },
-            {
-                "token": "2.3",
-                "label": "4-B-Varian"
-            },
-            {
-                "token": "g",
                 "label": "4-I-Varian"
             },
             {
-                "token": "NA",
+                "token": "2.3",
                 "label": "5-B-Ukuran"
+            },
+            {
+                "token": "g",
+                "label": "5-I-Ukuran"
+            },
+            {
+                "token": "NA",
+                "label": "2-O"
             },
             {
                 "token": "18171302219",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "Soulmatte",
-                "label": "2-O"
-            },
-            {
-                "token": "Lipstick",
-                "label": "2-O"
-            },
-            {
-                "token": "06",
                 "label": "3-B-NamaProduk"
             },
             {
-                "token": "Red",
+                "token": "Lipstick",
                 "label": "3-I-NamaProduk"
             },
             {
-                "token": "Queen",
+                "token": "06",
                 "label": "4-B-Varian"
             },
             {
-                "token": "2.3",
+                "token": "Red",
                 "label": "4-I-Varian"
             },
             {
-                "token": "g",
+                "token": "Queen",
+                "label": "4-I-Varian"
+            },
+            {
+                "token": "2.3",
                 "label": "5-B-Ukuran"
             },
             {
+                "token": "g",
+                "label": "5-I-Ukuran"
+            },
+            {
                 "token": "NA",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "18161304500",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             }
         ],
         [
             {
                 "token": "Emina",
-                "label": "3-B-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Sugar",
-                "label": "1-B-Merek"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Rush",
@@ -40957,11 +40957,11 @@
             },
             {
                 "token": "03",
-                "label": "4-I-Varian"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Cherry",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Bomb",
@@ -41337,7 +41337,7 @@
             },
             {
                 "token": "Longlasting",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "3",
@@ -41357,27 +41357,27 @@
             },
             {
                 "token": "macadamia",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "untuk",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "menjaga",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "kelembaban",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "4-B-Varian"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "4",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": ".",
@@ -41385,7 +41385,7 @@
             },
             {
                 "token": "Tersedia",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "dalam",
@@ -41393,39 +41393,39 @@
             },
             {
                 "token": "15",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "pilihan",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "warna",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "Creamatte",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "01",
-                "label": "3-B-NamaProduk"
-            },
-            {
-                "token": "Chocolava",
                 "label": "4-B-Varian"
             },
             {
-                "token": "NA18161302141",
+                "token": "Chocolava",
                 "label": "4-I-Varian"
             },
             {
-                "token": "Creamatte",
+                "token": "NA18161302141",
                 "label": "2-O"
             },
             {
-                "token": "02",
+                "token": "Creamatte",
                 "label": "3-B-NamaProduk"
+            },
+            {
+                "token": "02",
+                "label": "4-B-Varian"
             },
             {
                 "token": "Fuzzy",
@@ -41433,67 +41433,67 @@
             },
             {
                 "token": "Wuzzy",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "NA18161302140",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "Creamatte",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "04",
-                "label": "3-B-NamaProduk"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Frostbite",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "NA18161302139",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "Creamatte",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "05",
-                "label": "3-B-NamaProduk"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Flamingo",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "NA18161302144",
-                "label": "4-I-Varian"
-            },
-            {
-                "token": "Creamatte",
-                "label": "4-I-Varian"
-            },
-            {
-                "token": "06",
                 "label": "2-O"
             },
             {
-                "token": "Jelly",
+                "token": "Creamatte",
                 "label": "3-B-NamaProduk"
             },
             {
-                "token": "Bean",
+                "token": "06",
                 "label": "4-B-Varian"
             },
             {
-                "token": "NA18161302143",
+                "token": "Jelly",
                 "label": "4-I-Varian"
             },
             {
-                "token": "Creamatte",
+                "token": "Bean",
+                "label": "4-I-Varian"
+            },
+            {
+                "token": "NA18161302143",
                 "label": "2-O"
+            },
+            {
+                "token": "Creamatte",
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "07",
@@ -41501,23 +41501,23 @@
             },
             {
                 "token": "Tumbleweed",
-                "label": "3-B-NamaProduk"
-            },
-            {
-                "token": "NA18161302145",
                 "label": "4-I-Varian"
             },
             {
-                "token": "Creamatte",
+                "token": "NA18161302145",
                 "label": "2-O"
             },
             {
-                "token": "08",
+                "token": "Creamatte",
                 "label": "3-B-NamaProduk"
             },
             {
-                "token": "Pumpkin",
+                "token": "08",
                 "label": "4-B-Varian"
+            },
+            {
+                "token": "Pumpkin",
+                "label": "4-I-Varian"
             },
             {
                 "token": "Spice",
@@ -41561,35 +41561,35 @@
             },
             {
                 "token": "NA18181301191",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "Creamatte",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "11",
-                "label": "3-B-NamaProduk"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Amazeballs",
-                "label": "4-B-Varian"
-            },
-            {
-                "token": "NA18181301190",
                 "label": "4-I-Varian"
             },
             {
-                "token": "Creamatte",
+                "token": "NA18181301190",
                 "label": "2-O"
             },
             {
-                "token": "12",
+                "token": "Creamatte",
                 "label": "3-B-NamaProduk"
             },
             {
-                "token": "Perky",
+                "token": "12",
                 "label": "4-B-Varian"
+            },
+            {
+                "token": "Perky",
+                "label": "4-I-Varian"
             },
             {
                 "token": "Plum",
@@ -41601,19 +41601,19 @@
             },
             {
                 "token": "Creamatte",
-                "label": "4-I-Varian"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "13",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Beet",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Bites",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "NA18181301186",
@@ -41621,15 +41621,15 @@
             },
             {
                 "token": "Creamatte",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "14",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Gingerale",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "NA18181301188",
@@ -41637,15 +41637,15 @@
             },
             {
                 "token": "Creamatte",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "15",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Chocopuff",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "NA18181301187",
@@ -42743,11 +42743,11 @@
             },
             {
                 "token": "Nias",
-                "label": "5-B-Ukuran"
+                "label": "4-B-Varian"
             },
             {
                 "token": "02",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Sariayu",
@@ -42881,15 +42881,15 @@
             },
             {
                 "token": "WI",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "03",
-                "label": "3-B-NamaProduk"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Hydra",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lip",
@@ -42897,7 +42897,7 @@
             },
             {
                 "token": "Tint",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "diformulasikan",
@@ -42909,7 +42909,7 @@
             },
             {
                 "token": "menjaga",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kelembaban",
@@ -42917,7 +42917,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ",",
@@ -43013,7 +43013,7 @@
             },
             {
                 "token": "alami",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "di",
@@ -43021,7 +43021,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ",",
@@ -43037,7 +43037,7 @@
             },
             {
                 "token": "warna",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "sehingga",
@@ -43045,7 +43045,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "terlihat",
@@ -43053,11 +43053,11 @@
             },
             {
                 "token": "segar",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "4-I-Varian"
+                "label": "2-O"
             }
         ],
         [
@@ -43297,11 +43297,11 @@
             },
             {
                 "token": "WI",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "04",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Amethyst",
@@ -43337,15 +43337,15 @@
             },
             {
                 "token": "Illipe",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Butter",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "untuk",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "melembapkan",
@@ -43361,15 +43361,15 @@
             },
             {
                 "token": "Lite",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lip",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cream",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "diformulasikan",
@@ -43393,11 +43393,11 @@
             },
             {
                 "token": "dengan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -43481,7 +43481,7 @@
             },
             {
                 "token": "kering",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "di",
@@ -43489,11 +43489,11 @@
             },
             {
                 "token": "bibir",
-                "label": "4-I-Varian"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
-                "label": "4-B-Varian"
+                "label": "2-O"
             }
         ],
         [
@@ -43515,11 +43515,11 @@
             },
             {
                 "token": "Serunai",
-                "label": "5-B-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "01",
-                "label": "5-B-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Sariayu",
@@ -43653,11 +43653,11 @@
             },
             {
                 "token": "WI",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "01",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Amethyst",
@@ -43713,19 +43713,19 @@
             },
             {
                 "token": "Lite",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lip",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cream",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "diformulasikan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "untuk",
@@ -43753,7 +43753,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -43825,7 +43825,7 @@
             },
             {
                 "token": "menakjubkan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "dan",
@@ -43833,23 +43833,23 @@
             },
             {
                 "token": "tidak",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "kering",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "di",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "3-I-NamaProduk"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             }
         ],
         [
@@ -43871,7 +43871,7 @@
             },
             {
                 "token": "01",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "a",
@@ -43879,15 +43879,15 @@
             },
             {
                 "token": ".",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Lipstick",
-                "label": "1-B-Merek"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "hadir",
@@ -43915,11 +43915,11 @@
             },
             {
                 "token": "melembapkan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "dan",
@@ -43987,7 +43987,7 @@
             },
             {
                 "token": ".",
-                "label": "4-I-Varian"
+                "label": "2-O"
             }
         ],
         [
@@ -44013,11 +44013,11 @@
             },
             {
                 "token": "Perawat",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "Bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "-",
@@ -44025,11 +44025,11 @@
             },
             {
                 "token": "merawat",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "senantiasa",
@@ -44129,11 +44129,11 @@
             },
             {
                 "token": "kulit",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -44173,19 +44173,19 @@
             },
             {
                 "token": "kerusakan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "2-O"
-            },
-            {
-                "token": ".",
                 "label": "6-B-Penggunaan"
             },
             {
-                "token": "Bibir",
+                "token": ".",
                 "label": "2-O"
+            },
+            {
+                "token": "Bibir",
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "menjadi",
@@ -44229,15 +44229,15 @@
             },
             {
                 "token": ":",
-                "label": "1-B-Merek"
-            },
-            {
-                "token": "Sariayu",
                 "label": "2-O"
             },
             {
+                "token": "Sariayu",
+                "label": "1-B-Merek"
+            },
+            {
                 "token": "Lipcare",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "Perawat",
@@ -44245,11 +44245,11 @@
             },
             {
                 "token": "Bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "Oleskan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "pada",
@@ -44257,7 +44257,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "secara",
@@ -44307,27 +44307,27 @@
             },
             {
                 "token": "-",
-                "label": "3-B-NamaProduk"
+                "label": "4-I-Varian"
             },
             {
                 "token": "07",
-                "label": "3-I-NamaProduk"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Duo",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Lip",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Color",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "merupakan",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "lipstick",
@@ -44335,7 +44335,7 @@
             },
             {
                 "token": "cair",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "/",
@@ -44343,7 +44343,7 @@
             },
             {
                 "token": "liquid",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "yang",
@@ -44403,7 +44403,7 @@
             },
             {
                 "token": "dan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "Glossy",
@@ -44419,7 +44419,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "tampak",
@@ -44547,7 +44547,7 @@
             },
             {
                 "token": "moisturizer",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "yang",
@@ -44563,7 +44563,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "sehingga",
@@ -44587,11 +44587,11 @@
             },
             {
                 "token": "dan",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "tahan",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "lama",
@@ -44599,7 +44599,7 @@
             },
             {
                 "token": ".",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -45091,7 +45091,7 @@
         [
             {
                 "token": "Sariayu",
-                "label": "3-I-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Color",
@@ -45107,7 +45107,7 @@
             },
             {
                 "token": "Duo",
-                "label": "1-B-Merek"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Lip",
@@ -45511,7 +45511,7 @@
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Color",
@@ -45843,7 +45843,7 @@
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Color",
@@ -45921,11 +45921,11 @@
         [
             {
                 "token": "Sariayu",
-                "label": "3-B-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Color",
-                "label": "1-B-Merek"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Trend",
@@ -46041,7 +46041,7 @@
             },
             {
                 "token": ",",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "diperkaya",
@@ -46053,7 +46053,7 @@
             },
             {
                 "token": "bibir",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -46133,7 +46133,7 @@
             },
             {
                 "token": "tidak",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kering",
@@ -46141,15 +46141,15 @@
             },
             {
                 "token": "di",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "bibir",
-                "label": "3-I-NamaProduk"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             }
         ],
         [
@@ -46623,7 +46623,7 @@
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "hadir",
@@ -47979,7 +47979,7 @@
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Color",
@@ -50387,7 +50387,7 @@
             },
             {
                 "token": "Color",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Trend",
@@ -50763,11 +50763,11 @@
             },
             {
                 "token": "Jeruk",
-                "label": "3-B-NamaProduk"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Moisturizer",
-                "label": "4-B-Varian"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Manfaat",
@@ -51221,11 +51221,11 @@
             },
             {
                 "token": "35",
-                "label": "4-B-Varian"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "gr",
-                "label": "4-I-Varian"
+                "label": "5-I-Ukuran"
             }
         ],
         [
@@ -54007,11 +54007,11 @@
             },
             {
                 "token": "bedak",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "yg",
@@ -54183,7 +54183,7 @@
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "terdiri",
@@ -57811,27 +57811,27 @@
             },
             {
                 "token": "matahari",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "3-I-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Gold",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Tinted",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Moisturized",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": ",",
@@ -57879,31 +57879,31 @@
             },
             {
                 "token": "sebelum",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "menggunakan",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "3-I-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Gold",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Two",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Way",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cake",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": ".",
@@ -57911,39 +57911,39 @@
             },
             {
                 "token": "1",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "x",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Lip",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "&",
-                "label": "4-B-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cheek",
-                "label": "4-I-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "02",
-                "label": "5-B-Ukuran"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Freshly",
-                "label": "5-I-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "35",
-                "label": "2-O"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "gr",
-                "label": "2-O"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "-",
@@ -58195,31 +58195,31 @@
             },
             {
                 "token": "x",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "FREE",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Two",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Way",
-                "label": "4-B-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cake",
-                "label": "4-I-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "01",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Light",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "-",
@@ -58259,11 +58259,11 @@
             },
             {
                 "token": "natural",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": ",",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "dan",
@@ -58271,7 +58271,7 @@
             },
             {
                 "token": "dark",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": ")",
@@ -58455,7 +58455,7 @@
             },
             {
                 "token": ".",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             }
         ],
         [
@@ -58497,31 +58497,31 @@
             },
             {
                 "token": "Gold",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Tinted",
-                "label": "4-B-Varian"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Moisturizer",
-                "label": "4-I-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "01",
-                "label": "5-B-Ukuran"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Light",
-                "label": "5-I-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "30",
-                "label": "2-O"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "ml",
-                "label": "2-O"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "Pelembap",
@@ -58669,23 +58669,23 @@
             },
             {
                 "token": ".",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "3-I-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Gold",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Tinted",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Moisturized",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": ",",
@@ -58733,31 +58733,31 @@
             },
             {
                 "token": "sebelum",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "menggunakan",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Gold",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Two",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Way",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cake",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": ".",
@@ -58765,19 +58765,19 @@
             },
             {
                 "token": "1",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "x",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "3-I-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Color",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Trend",
@@ -58793,31 +58793,31 @@
             },
             {
                 "token": "&",
-                "label": "4-B-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cheek",
-                "label": "4-I-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "S",
-                "label": "4-I-Varian"
+                "label": "4-B-Varian"
             },
             {
                 "token": "01",
-                "label": "5-B-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Rosy",
-                "label": "5-I-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "35",
-                "label": "2-O"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "gr",
-                "label": "2-O"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "-",
@@ -59069,31 +59069,31 @@
             },
             {
                 "token": "x",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "FREE",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Two",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Way",
-                "label": "4-B-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cake",
-                "label": "4-I-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "01",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Light",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "-",
@@ -59117,7 +59117,7 @@
             },
             {
                 "token": "warna",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "(",
@@ -59133,11 +59133,11 @@
             },
             {
                 "token": "natural",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": ",",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "dan",
@@ -59145,7 +59145,7 @@
             },
             {
                 "token": "dark",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": ")",
@@ -59209,7 +59209,7 @@
             },
             {
                 "token": "pada",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "kulit",
@@ -59217,7 +59217,7 @@
             },
             {
                 "token": "wajah",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": ".",
@@ -59329,7 +59329,7 @@
             },
             {
                 "token": ".",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             }
         ],
         [
@@ -60193,31 +60193,31 @@
             },
             {
                 "token": "Gold",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Tinted",
-                "label": "4-B-Varian"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Moisturizer",
-                "label": "4-I-Varian"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "03",
-                "label": "5-B-Ukuran"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Dark",
-                "label": "5-I-Ukuran"
+                "label": "4-I-Varian"
             },
             {
                 "token": "30",
-                "label": "2-O"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "ml",
-                "label": "2-O"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "Pelembap",
@@ -60361,27 +60361,27 @@
             },
             {
                 "token": "matahari",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "3-I-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Gold",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Tinted",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Moisturized",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": ",",
@@ -60429,31 +60429,31 @@
             },
             {
                 "token": "sebelum",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "menggunakan",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Gold",
-                "label": "3-B-NamaProduk"
-            },
-            {
-                "token": "Two",
-                "label": "3-I-NamaProduk"
-            },
-            {
-                "token": "Way",
                 "label": "2-O"
             },
             {
-                "token": "Cake",
+                "token": "Two",
                 "label": "3-B-NamaProduk"
+            },
+            {
+                "token": "Way",
+                "label": "3-I-NamaProduk"
+            },
+            {
+                "token": "Cake",
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": ".",
@@ -60469,11 +60469,11 @@
             },
             {
                 "token": "Sariayu",
-                "label": "3-B-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Color",
-                "label": "1-B-Merek"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Trend",
@@ -62533,11 +62533,11 @@
             },
             {
                 "token": "03",
-                "label": "4-I-Varian"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Dark",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "-",
@@ -62585,11 +62585,11 @@
             },
             {
                 "token": "dan",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "dark",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": ")",
@@ -62779,11 +62779,11 @@
         [
             {
                 "token": "Sariayu",
-                "label": "3-B-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Autocantik",
-                "label": "1-B-Merek"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Package",
@@ -63653,11 +63653,11 @@
         [
             {
                 "token": "Sariayu",
-                "label": "3-B-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Autocantik",
-                "label": "1-B-Merek"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Package",
@@ -63673,11 +63673,11 @@
             },
             {
                 "token": "Freshly",
-                "label": "2-O"
+                "label": "4-I-Varian"
             },
             {
                 "token": "1",
-                "label": "4-I-Varian"
+                "label": "2-O"
             },
             {
                 "token": "x",
@@ -65199,19 +65199,19 @@
             },
             {
                 "token": "natural",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": ",",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "dan",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "dark",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": ")",
@@ -67253,19 +67253,19 @@
             },
             {
                 "token": "Papua",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "02",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "3-B-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Mascara",
-                "label": "2-O"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "exotic",
@@ -67273,7 +67273,7 @@
             },
             {
                 "token": "Papua",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": ",",
@@ -67285,11 +67285,11 @@
             },
             {
                 "token": "bulu",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "mata",
-                "label": "2-O"
+                "label": "6-I-Penggunaan"
             },
             {
                 "token": "waterproof",
@@ -67317,7 +67317,7 @@
             },
             {
                 "token": "luntur",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": ")",
@@ -67329,7 +67329,7 @@
             },
             {
                 "token": "sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "yang",
@@ -67337,11 +67337,11 @@
             },
             {
                 "token": "bermanfaat",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "untuk",
-                "label": "6-I-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "membuat",
@@ -67349,11 +67349,11 @@
             },
             {
                 "token": "bulu",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "mata",
-                "label": "2-O"
+                "label": "6-I-Penggunaan"
             },
             {
                 "token": "terlihat",
@@ -67453,11 +67453,11 @@
             },
             {
                 "token": ":",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "Ulaskan",
-                "label": "6-I-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "pada",
@@ -67465,31 +67465,31 @@
             },
             {
                 "token": "bulu",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "mata",
-                "label": "2-O"
+                "label": "6-I-Penggunaan"
             },
             {
                 "token": ".",
-                "label": "5-B-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": "Netto",
-                "label": "5-I-Ukuran"
+                "label": "2-O"
             },
             {
                 "token": ":",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "6.5",
-                "label": "4-B-Varian"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "gr",
-                "label": "2-O"
+                "label": "5-I-Ukuran"
             }
         ],
         [
@@ -68295,7 +68295,7 @@
             },
             {
                 "token": "untuk",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "membingkai",
@@ -68303,7 +68303,7 @@
             },
             {
                 "token": "mata",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "agar",
@@ -68425,11 +68425,11 @@
             },
             {
                 "token": "alis",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "sesuai",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "keinginan",
@@ -68469,15 +68469,15 @@
             },
             {
                 "token": "Pensil",
-                "label": "1-B-Merek"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "alis",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "tersedia",
@@ -68505,23 +68505,23 @@
             },
             {
                 "token": ":",
-                "label": "4-B-Varian"
-            },
-            {
-                "token": "-",
-                "label": "4-I-Varian"
-            },
-            {
-                "token": "Coklat",
-                "label": "4-I-Varian"
-            },
-            {
-                "token": "sawo",
                 "label": "2-O"
             },
             {
-                "token": "matang",
+                "token": "-",
+                "label": "2-O"
+            },
+            {
+                "token": "Coklat",
                 "label": "4-B-Varian"
+            },
+            {
+                "token": "sawo",
+                "label": "4-I-Varian"
+            },
+            {
+                "token": "matang",
+                "label": "4-I-Varian"
             },
             {
                 "token": "-",
@@ -68529,11 +68529,11 @@
             },
             {
                 "token": "Hitam",
-                "label": "5-B-Ukuran"
+                "label": "4-B-Varian"
             },
             {
                 "token": "DIM",
-                "label": "5-I-Ukuran"
+                "label": "5-B-Ukuran"
             },
             {
                 "token": "13",
@@ -68553,11 +68553,11 @@
             },
             {
                 "token": "1",
-                "label": "4-B-Varian"
+                "label": "5-I-Ukuran"
             },
             {
                 "token": "CM",
-                "label": "4-I-Varian"
+                "label": "5-I-Ukuran"
             }
         ],
         [
@@ -69311,7 +69311,7 @@
             },
             {
                 "token": "pilihan",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "terbaik",
@@ -69323,7 +69323,7 @@
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Trend",
@@ -69749,15 +69749,15 @@
             },
             {
                 "token": "(Eyeliner+Mascara)",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "SARIAYU",
-                "label": "3-B-NamaProduk"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Duo",
-                "label": "3-I-NamaProduk"
+                "label": "3-B-NamaProduk"
             },
             {
                 "token": "Eye",
@@ -69769,7 +69769,7 @@
             },
             {
                 "token": "Up",
-                "label": "2-O"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "MASCARA",
@@ -69781,11 +69781,11 @@
             },
             {
                 "token": "EYELINER",
-                "label": "4-B-Varian"
+                "label": "2-O"
             },
             {
                 "token": "HITAM",
-                "label": "2-O"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Mascara",
@@ -69817,11 +69817,11 @@
             },
             {
                 "token": "terbaru",
-                "label": "1-B-Merek"
+                "label": "2-O"
             },
             {
                 "token": "Sariayu",
-                "label": "2-O"
+                "label": "1-B-Merek"
             },
             {
                 "token": "Menyempurnakan",
@@ -69829,11 +69829,11 @@
             },
             {
                 "token": "riasan",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "mata",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "dengan",
@@ -69877,11 +69877,11 @@
             },
             {
                 "token": "Bulu",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "mata",
-                "label": "2-O"
+                "label": "6-I-Penggunaan"
             },
             {
                 "token": "lentik",
@@ -69913,11 +69913,11 @@
             },
             {
                 "token": "Kering",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "untuk",
-                "label": "6-I-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "membingkai",
@@ -69975,19 +69975,19 @@
             },
             {
                 "token": "Gili",
-                "label": "2-O"
-            },
-            {
-                "token": "Lombok",
-                "label": "2-O"
-            },
-            {
-                "token": "mempersembahkan",
                 "label": "4-B-Varian"
             },
             {
-                "token": "inovasi",
+                "token": "Lombok",
                 "label": "4-I-Varian"
+            },
+            {
+                "token": "mempersembahkan",
+                "label": "2-O"
+            },
+            {
+                "token": "inovasi",
+                "label": "2-O"
             },
             {
                 "token": "terbaru",
@@ -70023,7 +70023,7 @@
             },
             {
                 "token": "ini",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "memiliki",
@@ -70035,7 +70035,7 @@
             },
             {
                 "token": "liquid",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "sehingga",
@@ -70075,7 +70075,7 @@
             },
             {
                 "token": "eksplorasi",
-                "label": "6-B-Penggunaan"
+                "label": "2-O"
             },
             {
                 "token": "make",
@@ -70087,7 +70087,7 @@
             },
             {
                 "token": "mata",
-                "label": "2-O"
+                "label": "6-B-Penggunaan"
             },
             {
                 "token": "yang",
