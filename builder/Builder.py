@@ -46,7 +46,6 @@ class Builder :
     self.source = source
     self.destination = destination
     self.content = "@prefix akgr: <https://deborrrrrah.github.io/resource/> .\n@prefix akgs: <https://deborrrrrah.github.io/ns#> .\n\n"
-    self.source_object = None
     self.source_file = None
     self.destination_file = None
     self.multi_value_properties = multi_value_properties
@@ -67,10 +66,10 @@ class Builder :
     
     # Read source file
     with open(self.source, 'r') as self.source_file:
-      self.source_object = json.loads(self.source_file.read())
+      source_object = json.loads(self.source_file.read())
 
     # Brand declaration
-    for (brand, items) in self.source_object.items() :
+    for (brand, items) in source_object.items() :
       self.content += RESOURCE_URI + brand + ' a ' + BRAND_CLASS + SPACE + DOT + ENTER + ENTER
       
       # Item declaration and its properties
