@@ -2229,7 +2229,7 @@
             },
             {
                 "token": "Lip",
-                "label": "3-B-NamaProduk"
+                "label": "3-I-NamaProduk"
             },
             {
                 "token": "Cream",
@@ -2589,11 +2589,11 @@
             },
             {
                 "token": "cream",
-                "label": "2-O"
+                "label": "7-B-Tekstur"
             },
             {
                 "token": "lembut",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "untuk",
@@ -7083,11 +7083,11 @@
             },
             {
                 "token": "09",
-                "label": "3-I-NamaProduk"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Vibrant",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Red",
@@ -7241,11 +7241,11 @@
             },
             {
                 "token": "13",
-                "label": "3-I-NamaProduk"
+                "label": "4-B-Varian"
             },
             {
                 "token": "Classic",
-                "label": "4-B-Varian"
+                "label": "4-I-Varian"
             },
             {
                 "token": "Brown",
@@ -19463,11 +19463,11 @@
             },
             {
                 "token": "kering",
-                "label": "7-B-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": ".",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             }
         ],
         [
@@ -19561,7 +19561,7 @@
             },
             {
                 "token": "halus",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "non",
@@ -19597,7 +19597,7 @@
             },
             {
                 "token": "halus",
-                "label": "7-I-Tekstur"
+                "label": "2-O"
             },
             {
                 "token": "non",
@@ -57827,11 +57827,11 @@
             },
             {
                 "token": "Tinted",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Moisturized",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": ",",
@@ -58681,11 +58681,11 @@
             },
             {
                 "token": "Tinted",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Moisturized",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": ",",
@@ -60377,11 +60377,11 @@
             },
             {
                 "token": "Tinted",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Moisturized",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": ",",
@@ -61251,11 +61251,11 @@
             },
             {
                 "token": "Tinted",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Moisturized",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": ",",
@@ -62125,11 +62125,11 @@
             },
             {
                 "token": "Tinted",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Moisturized",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": ",",
@@ -62999,11 +62999,11 @@
             },
             {
                 "token": "Tinted",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Moisturized",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": ",",
@@ -63873,11 +63873,11 @@
             },
             {
                 "token": "Tinted",
-                "label": "3-B-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": "Moisturized",
-                "label": "3-I-NamaProduk"
+                "label": "2-O"
             },
             {
                 "token": ",",
