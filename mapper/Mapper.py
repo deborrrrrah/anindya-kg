@@ -4,10 +4,9 @@ import collections
 import re
 
 class Mapper :
-  def __init__(self, object, label_dict, brand_organization_list):
+  def __init__(self, object, label_dict):
       self.object = object
       self.label_dict = label_dict
-      self.brand_organization_list = brand_organization_list
 
   def __extract(self) :
     labels = self.label_dict.keys()
@@ -88,6 +87,7 @@ class Mapper :
         preprocessed_text = self.__preprocessRemovePunct(preprocessed_text)
 
       results.append((preprocessed_text, text[1]))
+
     return results
 
   def __getSimilarText(self, text_1, text_2) :
@@ -103,7 +103,7 @@ class Mapper :
     # Edit Distance Condition
     return (is_similar, mapped_text)
 
-  def __getSimilarTextDict(self, object) :
+  def __getSimilarTextDict(self, object, idx) :
     dictionary = {}
     uniqueText = []
 
@@ -116,12 +116,12 @@ class Mapper :
     for i in range(len(uniqueText)) :
       dictionary[uniqueText[i]] = uniqueText[i]
       for j in range (len(uniqueText)) :
-        if (i >= j) : 
-            pass
+        if (i == j) : 
+          pass
         else :
           is_similar, mapped_text = self.__getSimilarText(uniqueText[i], uniqueText[j]) 
           if (is_similar) :
-            dictionary[object[i][0]] = mapped_text
+            dictionary[uniqueText[i]] = mapped_text
     return dictionary
 
   def __getSimilarTextResult(self, object, similar_text_dict) :
@@ -137,6 +137,14 @@ class Mapper :
       results[mapped_text].extend(token_location)
     
     return list(results.items())
+  
+  def __generateURI(self, brand, product) :
+    uri = ""
+    for word in brand[0].split(" ") :
+      uri += word
+    for word in product[0].split(" ") :
+      uri += word
+    return uri
 
   def __select(self, extracted_entities, preprocess_list) :
     mapping_dict = []
@@ -144,13 +152,31 @@ class Mapper :
       mapping_dict_item = {}
       for key in extracted_entity.keys() :
         extracted_entity[key] = self.__preprocess(key, extracted_entity[key], preprocess_list, idx)
-        mapping_dict_item[key] = self.__getSimilarTextDict(extracted_entity[key])
+        mapping_dict_item[key] = self.__getSimilarTextDict(extracted_entity[key], idx)
         extracted_entity[key] = self.__getSimilarTextResult(extracted_entity[key], mapping_dict_item[key])
         extracted_entity[key].sort(key = lambda text: len(text[1]), reverse=True)
+      try :
+        extracted_entity['URI'] = self.__generateURI(extracted_entity['Merek'][0], extracted_entity['NamaProduk'][0])
+      except IndexError :
+        pass
       mapping_dict.append(mapping_dict_item)
     return mapping_dict, extracted_entities
+  
+  def __integrate(self, selected_entities, manual_data_list, brand_organization_list) :
+    # No brand products, get input from manual data
 
-  def mapToKG(self, preprocess_list) :
+    # Generate URI
+
+    # Integrate URI
+
+    # Integrate Property
+    return selected_entities
+
+
+  def mapToKG(self, preprocess_list, brand_organization_list, manual_data_list) :
+    # is_similar, mapped_text = self.__getSimilarText('Instaperfect Mineralight Matte Bb Cushion', 'Refill Instaperfect Mineralight Matte Bb Cushion') 
+    # print (is_similar, mapped_text)
     extracted_entities = self.__extract()
     mapping_dict, selected_entities = self.__select(extracted_entities, preprocess_list)
-    return mapping_dict, selected_entities
+    integrated_entities = self.__integrate(selected_entities, manual_data_list, brand_organization_list)
+    return mapping_dict, integrated_entities
