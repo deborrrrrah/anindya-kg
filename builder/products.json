@@ -1,47 +1,51 @@
 {
-  "Emina" : [
+  "ParagonTechnologyAndInnovation" : [
       {
         "EminaLipCreamMatte" : {
           "name" : "Lip Cream Matte",
           "measurement" : "5.5 gr",
           "variant" : ["01 Chocolava", "02 Fuzzy Wuzzy", "03 Mauvelous"],
-          "usage" : "Bibir"
+          "usage" : "Bibir",
+          "brand" : "Emina"
         }
       },
       {
         "EminaSmoochiesLipBalm" : {
           "name" : "Smoochies Lip Balm",
           "variant" : ["Cucumber Juice", "Lemonade"],
-          "usage" : "Bibir"
+          "usage" : "Bibir",
+          "brand" : "Emina"
         }
-      }
-  ],
-  "Wardah" : [
+      },
       {
         "WardahColorfitVelvetMatteLipMousse" : {
           "name" : "Colorfit Velvet Matte Lip Mousse",
           "variant" : ["01 Brown Dreamer", "02 Joyful Orange"],
-          "usage" : "Bibir"
+          "usage" : "Bibir",
+          "brand" : "Wardah"
         },
         "WardahExclusiveMatteLipCream" : {
           "name" : "Exclusive Matte Lip Cream",
           "variant" : ["01 Red-dicted", "02 Fuschionately"],
-          "usage" : "Bibir"
+          "usage" : "Bibir",
+          "brand" : "Wardah"
         }
       }
   ],
-  "Sariayu" : [
+  "MarthaTilaarGroup" : [
       {
         "SariayuCompactPowderSPF15" : {
           "name" : "Compact Powder SPF15",
           "variant" : ["Kuning Langsat", "Kuning Pengantin"],
-          "usage" : "Wajah"
+          "usage" : "Wajah",
+          "brand" : "Sariayu"
         },
         "SariayuAlasBedak" : {
           "name" : "Alas Bedak",
           "variant" : ["Kuning Langsat", "Kuning Pengantin", "Sawo Matang"],
           "usage" : "Wajah",
-          "measurement" : "35 ml"
+          "measurement" : "35 ml",
+          "brand" : "Sariayu"
         }
       }
   ]
