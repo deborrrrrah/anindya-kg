@@ -1,0 +1,36 @@
+{
+    "preprocess" : {
+        "capitalize" : ["NamaProduk", "Penggunaan", "Tekstur", "Merek", "Varian"],
+        "removed-punct" : ["Varian"]
+    },
+    "property-cardinality" : {
+        "single-value" : ["NamaProduk", "Tekstur", "Merek", "Ukuran"],
+        "multi-value" : ["Varian", "Penggunaan"]
+    },
+    "URI-element" : ["Merek", "NamaProduk"],
+    "brand-organization" : {
+        "Emina" : "ParagonTechnologyAndInnovation",
+        "Wardah" : "ParagonTechnologyAndInnovation",
+        "Sariayu" : "MartinaBerto",
+        "PAC" : "MartinaBerto",
+        "Inez" : "KosmetikatamaSuperIndah",
+        "VIVA" : "Vitapharm"
+    },
+    "label-dictionary" : {
+        "NamaProduk" : "name",
+        "Merek" : "brand",
+        "Varian" : "variant",
+        "Tekstur" : "texture",
+        "Penggunaan" : "usage",
+        "Ukuran" : "measurement"
+    },
+    "manual-mapping" : {
+        "Wardah" : ["Instaperfect"]
+    },
+    "data-source" : "mapper/data/shopee-v2-onscope.json",
+    "mapping-result" : "mapper/results/mapping-result.json",
+    "mapping-dict" : "mapper/results/mapping-dictionary.json",
+    "mapping-eval" : "mapper/results/eval.json",
+    "integrate-result" : "mapper/integrate-result.json",
+    "knowledge-graph" : "query/result-v2.ttl"
+}
