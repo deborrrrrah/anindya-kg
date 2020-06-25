@@ -6,7 +6,7 @@ Value of the property is string, and so the multivalue property is list of strin
 
 JSON FORMAT 
 {
-  "Brand_1" : [
+  "Organization_1" : [
       {
         "Product_1" : {
           "Property_1" : "Value",
@@ -22,7 +22,7 @@ JSON FORMAT
         }
       }
   ],
-  "Brand_2" : [
+  "Organization_2" : [
       {
         "Product_1" : {
           "Property_1" : "Value",
@@ -46,7 +46,6 @@ class Builder :
     self.source = source
     self.destination = destination
     self.content = "@prefix akgr: <https://deborrrrrah.github.io/resource/> .\n@prefix akgs: <https://deborrrrrah.github.io/ns#> .\n\n"
-    self.source_object = None
     self.source_file = None
     self.destination_file = None
     self.multi_value_properties = multi_value_properties
@@ -56,7 +55,7 @@ class Builder :
 
     RESOURCE_URI = "akgr:"
     SEMANTIC_URI = "akgs:"
-    BRAND_CLASS = "akgs:Brand"
+    BRAND_CLASS = "akgs:Organization"
     PRODUCT_CLASS = "akgs:Product"
     PRODUCE_PREDICATE = "akgs:produces"
     SPACE = " "
@@ -67,10 +66,10 @@ class Builder :
     
     # Read source file
     with open(self.source, 'r') as self.source_file:
-      self.source_object = json.loads(self.source_file.read())
+      source_object = json.loads(self.source_file.read())
 
     # Brand declaration
-    for (brand, items) in self.source_object.items() :
+    for (brand, items) in source_object.items() :
       self.content += RESOURCE_URI + brand + ' a ' + BRAND_CLASS + SPACE + DOT + ENTER + ENTER
       
       # Item declaration and its properties
@@ -78,12 +77,11 @@ class Builder :
         for (item_name, item_description) in item.items() :
           self.content += RESOURCE_URI + item_name + ' a ' + PRODUCT_CLASS + SPACE
           for (item_property_key, item_property_val) in item_description.items() :
-            for multi_value_property in self.multi_value_properties :
-              if multi_value_property in item_property_key :
-                for value in item_property_val :
-                  self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + value + APOSTROPHE + SPACE
-                break
-              else : self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
+            if item_property_key in self.multi_value_properties :
+              for value in item_property_val :
+                self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + value + APOSTROPHE + SPACE
+              break
+            else : self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
           self.content += DOT + ENTER + ENTER
           
           # Item relationsship to brand
