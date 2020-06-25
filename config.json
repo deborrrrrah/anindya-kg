@@ -1,11 +1,15 @@
 {
     "preprocess" : {
         "capitalize" : ["NamaProduk", "Penggunaan", "Tekstur", "Merek", "Varian"],
-        "removed-punct" : ["Varian"]
+        "removed-punct" : ["Varian", "NamaProduk"],
+        "lowercase" : ["Ukuran"]
     },
     "property-cardinality" : {
         "single-value" : ["NamaProduk", "Tekstur", "Merek", "Ukuran"],
         "multi-value" : ["Varian", "Penggunaan"]
+    },
+    "kg-property-cardinality" : {
+        "multi-value" : ["variant", "usage"]
     },
     "URI-element" : ["Merek", "NamaProduk"],
     "brand-organization" : {
@@ -27,10 +31,21 @@
     "manual-mapping" : {
         "Wardah" : ["Instaperfect"]
     },
-    "data-source" : "mapper/data/shopee-v2-onscope.json",
-    "mapping-result" : "mapper/results/mapping-result.json",
-    "mapping-dict" : "mapper/results/mapping-dictionary.json",
-    "mapping-eval" : "mapper/results/eval.json",
-    "integrate-result" : "mapper/integrate-result.json",
+    "similarity-checking" : {
+        "NamaProduk" : ["subset", "algorithm overlap-coefficient 0.6"],
+        "Merek" : ["subset"],
+        "Varian" : ["subset"],
+        "Tekstur" : ["subset", "translate"],
+        "Penggunaan" : ["subset"],
+        "Ukuran" : ["subset", "algorithm jaccard 1"],
+        "URI" : ["algorithm cosine 0.95"]
+    },
+    "data-source" : "data/shopee-v2-onscope.json",
+    "mapping-result" : "results/mapping-result.json",
+    "mapping-dict" : "results/mapping-dictionary.json",
+    "mapping-eval" : "results/mapping-eval.json",
+    "integrate-result" : "results/integrate-result.json",
+    "integrate-dict" : "results/integrate-dict.json",
+    "integrate-eval" : "results/integrate-eval.json",
     "knowledge-graph" : "query/result-v2.ttl"
 }

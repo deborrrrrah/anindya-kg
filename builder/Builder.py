@@ -77,12 +77,11 @@ class Builder :
         for (item_name, item_description) in item.items() :
           self.content += RESOURCE_URI + item_name + ' a ' + PRODUCT_CLASS + SPACE
           for (item_property_key, item_property_val) in item_description.items() :
-            for multi_value_property in self.multi_value_properties :
-              if multi_value_property in item_property_key :
-                for value in item_property_val :
-                  self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + value + APOSTROPHE + SPACE
-                break
-              else : self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
+            if item_property_key in self.multi_value_properties :
+              for value in item_property_val :
+                self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + value + APOSTROPHE + SPACE
+              break
+            else : self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
           self.content += DOT + ENTER + ENTER
           
           # Item relationsship to brand
