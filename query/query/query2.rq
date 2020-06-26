@@ -3,4 +3,4 @@ PREFIX akgr: <https://deborrrrrah.github.io/resource/>
 
 DESCRIBE ?product
 WHERE
-{ akgr:Sariayu akgs:produces ?product . ?product akgs:usage "Wajah" .}  
+{ akgr:MartinaBerto akgs:produces ?product . ?product akgs:usage "Wajah" .}  

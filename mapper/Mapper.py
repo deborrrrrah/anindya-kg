@@ -430,12 +430,5 @@ class Mapper :
   def mapToKG(self) :
     extracted_entities = self.__extract()
     mapping_dict, selected_entities = self.__select(extracted_entities)
-    print ("\nExample Mapping Result")
-    print (mapping_dict[0:2], "\n")
-    print (selected_entities[0:2], "\n")
     integrate_dict, integrated_entities = self.__integrate(selected_entities)
-    print ("\nExample Integration Result")
-    print (integrate_dict['URI-dict'], "\n")
-    print (integrate_dict['product-dict'][0:10], "\n")
-    print (integrated_entities['ParagonTechnologyAndInnovation'][0:2], "\n")
     return mapping_dict, integrate_dict, selected_entities, integrated_entities

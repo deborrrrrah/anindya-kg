@@ -1,6 +1,6 @@
 PREFIX akgs: <https://deborrrrrah.github.io/ns#> 
 PREFIX akgr: <https://deborrrrrah.github.io/resource/> 
 
-DESCRIBE ?product
+SELECT ?product ?variant
 WHERE
-{ akgr:ParagonTechnologyAndInnovation akgs:produces ?product .}  
+{ akgr:ParagonTechnologyAndInnovation akgs:produces ?product . ?product akgs:brand "Emina" . ?product akgs:usage "Mata" . ?product akgs:variant ?variant .}  

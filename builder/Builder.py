@@ -42,55 +42,36 @@ JSON FORMAT
 """
 
 class Builder :
-  def __init__(self, source, destination, multi_value_properties):
-    self.source = source
-    self.destination = destination
-    self.content = "@prefix akgr: <https://deborrrrrah.github.io/resource/> .\n@prefix akgs: <https://deborrrrrah.github.io/ns#> .\n\n"
-    self.source_file = None
-    self.destination_file = None
-    self.multi_value_properties = multi_value_properties
+  def __init__(self, dataset, config):
+    self.content = config["builder"]["content-prefix"]
+    self.dataset = dataset
+    self.config = config
   
   def buildKG(self) :
-    print ('Initializing KG building ...')
-
-    RESOURCE_URI = "akgr:"
-    SEMANTIC_URI = "akgs:"
-    BRAND_CLASS = "akgs:Organization"
-    PRODUCT_CLASS = "akgs:Product"
-    PRODUCE_PREDICATE = "akgs:produces"
     SPACE = " "
     SEMICOLON = ";"
     DOT = "."
     ENTER = "\n"
     APOSTROPHE = "\""
-    
-    # Read source file
-    with open(self.source, 'r') as self.source_file:
-      source_object = json.loads(self.source_file.read())
+
+    label_dict = dict((en,id) for id, en in self.config["label-dictionary"].items())
 
     # Brand declaration
-    for (brand, items) in source_object.items() :
-      self.content += RESOURCE_URI + brand + ' a ' + BRAND_CLASS + SPACE + DOT + ENTER + ENTER
+    for (brand, items) in self.dataset.items() :
+      self.content += self.config["builder"]["resource-prefix"] + brand + " a " + self.config["builder"]["organization-class"] + SPACE + DOT + ENTER + ENTER
       
       # Item declaration and its properties
       for item in items :
         for (item_name, item_description) in item.items() :
-          self.content += RESOURCE_URI + item_name + ' a ' + PRODUCT_CLASS + SPACE
+          self.content += self.config["builder"]["resource-prefix"] + item_name + " a " + self.config["builder"]["product-class"] + SPACE
           for (item_property_key, item_property_val) in item_description.items() :
-            if item_property_key in self.multi_value_properties :
+            if label_dict[item_property_key] in self.config["property-cardinality"]["multi-value"] :
               for value in item_property_val :
-                self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + value + APOSTROPHE + SPACE
-              break
-            else : self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
+                self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["semantic-prefix"] + item_property_key + SPACE + APOSTROPHE + value + APOSTROPHE + SPACE
+            else : 
+              self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["semantic-prefix"] + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
           self.content += DOT + ENTER + ENTER
-          
-          # Item relationsship to brand
-          self.content += RESOURCE_URI + brand + SPACE + PRODUCE_PREDICATE + SPACE + RESOURCE_URI + item_name + SPACE + DOT + ENTER + ENTER    
+          # Item relationship to brand
+          self.content += self.config["builder"]["resource-prefix"] + brand + SPACE + self.config["builder"]["produces-predicate"] + SPACE + self.config["builder"]["resource-prefix"] + item_name + SPACE + DOT + ENTER + ENTER    
     
-    print ('Writing KG to', self.destination)
-    # Write content into destination file
-    self.destination_file = open(self.destination, "w+")
-    self.destination_file.write(self.content)
-    self.destination_file.close()
-
-    print ('KG is saved!')
+    return self.content

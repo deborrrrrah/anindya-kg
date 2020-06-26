@@ -2,18 +2,38 @@ from builder.Builder import Builder
 from mapper.Mapper import Mapper
 import json
 
-config = "config.json"
+config_filename = "config.json"
 
-with open(config, 'r', encoding="utf8") as f:
-  config = json.load(f)
+def readJSON(filename) :
+  with open(filename, 'r', encoding="utf8") as f:
+    obj = json.load(f)
+  return obj
 
-with open(config['data-source'], 'r', encoding="utf8") as f:
-  dataset = json.load(f) 
+def writeJSON(obj, filename) :
+  with open(filename, 'w', encoding="utf8") as outfile:
+    json.dump(obj, outfile)
+  print ("Successfully write JSON obj to", filename)
 
-preprocess_list = config['preprocess']
+def writeFile(content, filename) :
+  file = open(filename, "w+", encoding="utf8")
+  file.write(content)
+  file.close()
+  print ("Successfully write file content to", filename)
+
+config = readJSON(config_filename)
+dataset = readJSON(config['data-source'])
 
 mapper = Mapper(dataset, config)
-mapping_dict, integrate_dict, mapping_results, integrate_results = mapper.mapToKG()
+mapping_dict, integrate_dict, mapping_result, integrate_result = mapper.mapToKG()
+
+# print ("\nExample Mapping Result")
+# print (mapping_dict[0:2], "\n")
+# print (mapping_result[0:2], "\n")
+
+# print ("\nExample Integration Result")
+# print (integrate_dict['URI-dict'], "\n")
+# print (integrate_dict['product-dict'][0:10], "\n")
+# print (integrate_result['ParagonTechnologyAndInnovation'][0:2], "\n")
 
 count = {
   "NamaProduk" : {
@@ -41,7 +61,7 @@ count = {
 # Produk dengan jumlah entitas Merek = 0
 # countNoBrand = 0
 # noBrand = []
-for result in mapping_results :
+for result in mapping_result :
   for key in count.keys() :
     if (len(result[key]) > 1) :
       count[key]['count'] += 1
@@ -53,20 +73,13 @@ for result in mapping_results :
 # print ("No brand product", str(countNoBrand))
 # print ()
 
-with open(config['mapping-eval'], 'w', encoding="utf8") as outfile:
-  json.dump(count, outfile)
+writeJSON(count, config['mapping-eval'])
+writeJSON(mapping_dict, config['mapping-dict'])
+writeJSON(integrate_dict, config['integrate-dict'])
+writeJSON(mapping_result, config['mapping-result'])
+writeJSON(integrate_result, config['integrate-result'])
 
-with open(config['mapping-dict'], 'w', encoding="utf8") as outfile:
-  json.dump(mapping_dict, outfile)
+builder = Builder(integrate_result, config)
+kg_result = builder.buildKG()
 
-with open(config['mapping-result'], 'w', encoding="utf8") as outfile:
-  json.dump(mapping_results, outfile)
-
-with open(config['integrate-dict'], 'w', encoding="utf8") as outfile:
-  json.dump(integrate_dict, outfile)
-
-with open(config['integrate-result'], 'w', encoding="utf8") as outfile:
-  json.dump(integrate_results, outfile)
-
-builder = Builder(config['integrate-result'], config['knowledge-graph'], config['kg-property-cardinality']['multi-value'])
-builder.buildKG()
+writeFile(kg_result, config['knowledge-graph'])
