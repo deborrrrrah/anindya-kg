@@ -47,7 +47,7 @@ for key, values in final_property_dict.items() :
 print ("Lebih dari satu map", count)
 
 for key, values in final_property_dict.items() :
-  integration_mapping.append((key, values))
+  integration_mapping.append((key, values[0]))
   final_property_dict[key] = values[0]
 
 with open(final_property_filename, 'w', encoding="utf8") as outfile:

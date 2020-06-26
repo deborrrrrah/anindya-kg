@@ -1,0 +1,56 @@
+{
+    "preprocess" : {
+        "capitalize" : ["NamaProduk", "Penggunaan", "Tekstur", "Merek", "Varian"],
+        "removed-punct" : ["Varian", "NamaProduk"],
+        "lowercase" : ["Ukuran"]
+    },
+    "property-cardinality" : {
+        "single-value" : ["NamaProduk", "Tekstur", "Merek", "Ukuran"],
+        "multi-value" : ["Varian", "Penggunaan"]
+    },
+    "similarity-checking" : {
+        "NamaProduk" : ["subset", "algorithm overlap-coefficient 0.6"],
+        "Merek" : ["subset"],
+        "Varian" : ["subset"],
+        "Tekstur" : ["subset", "translate"],
+        "Penggunaan" : ["subset"],
+        "Ukuran" : ["subset", "algorithm jaccard 1"],
+        "URI" : ["algorithm cosine 0.95"]
+    },
+    "URI-element" : ["Merek", "NamaProduk"],
+    "brand-organization" : {
+        "Emina" : "ParagonTechnologyAndInnovation",
+        "Wardah" : "ParagonTechnologyAndInnovation",
+        "Sariayu" : "MartinaBerto",
+        "PAC" : "MartinaBerto",
+        "Inez" : "KosmetikatamaSuperIndah",
+        "VIVA" : "Vitapharm"
+    },
+    "label-dictionary" : {
+        "NamaProduk" : "name",
+        "Merek" : "brand",
+        "Varian" : "variant",
+        "Tekstur" : "texture",
+        "Penggunaan" : "usage",
+        "Ukuran" : "measurement"
+    },
+    "manual-mapping" : {
+        "Wardah" : ["Instaperfect"]
+    },
+    "builder" : {
+        "content-prefix" : "@prefix akgr: <https://deborrrrrah.github.io/resource/> .\n@prefix akgs: <https://deborrrrrah.github.io/ns#> .\n\n",
+        "resource-prefix" : "akgr:",
+        "semantic-prefix" : "akgs:",
+        "organization-class" : "akgs:Organization",
+        "product-class" : "akgs:Product",
+        "produces-predicate" : "akgs:produces"
+    },
+    "data-source" : "data/shopee-v2-onscope.json",
+    "mapping-result" : "results/mapping-result.json",
+    "mapping-dict" : "results/mapping-dictionary.json",
+    "mapping-eval" : "results/mapping-eval.json",
+    "integrate-result" : "results/integrate-result.json",
+    "integrate-dict" : "results/integrate-dict.json",
+    "integrate-eval" : "results/integrate-eval.json",
+    "knowledge-graph" : "query/result-v2.ttl"
+}
