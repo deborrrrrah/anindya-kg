@@ -753,16 +753,17 @@ akgr:MartinaBerto akgs:produces akgr:SariayuColorTrend2019HydraLipTint .
 akgr:SariayuColorTrend2019LiteLipCream a akgs:Product ;
   akgs:name "Color Trend 2019 Lite Lip Cream" ;
   akgs:brand "Sariayu" ;
-  akgs:variant "Wi 03" ;
-  akgs:variant "J 05" ;
   akgs:variant "Wi 04" ;
   akgs:variant "Wi 01" ;
   akgs:variant "Wi 02" ;
   akgs:variant "J 06" ;
+  akgs:variant "Wi 03" ;
   akgs:variant "J 04" ;
   akgs:variant "J 07" ;
+  akgs:variant "J 03" ;
   akgs:variant "J 01" ;
   akgs:variant "J 02" ;
+  akgs:variant "J 05" ;
   akgs:usage "Bibir" .
 
 akgr:MartinaBerto akgs:produces akgr:SariayuColorTrend2019LiteLipCream .
