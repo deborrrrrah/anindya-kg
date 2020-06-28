@@ -9,13 +9,24 @@
         "multi-value" : ["Varian", "Penggunaan"]
     },
     "similarity-checking" : {
-        "NamaProduk" : ["subset", "algorithm overlap-coefficient 0.6"],
-        "Merek" : ["subset"],
-        "Varian" : ["subset"],
-        "Tekstur" : ["subset", "translate"],
-        "Penggunaan" : ["subset"],
-        "Ukuran" : ["subset", "algorithm jaccard 1"],
-        "URI" : ["algorithm cosine 0.95"]
+        "mapping" : {
+            "NamaProduk" : ["subset", "algorithm overlap-coefficient 0.6"],
+            "Merek" : ["subset"],
+            "Varian" : ["subset"],
+            "Tekstur" : ["subset", "translate"],
+            "Penggunaan" : ["subset"],
+            "Ukuran" : ["subset", "algorithm jaccard 1"],
+            "URI" : ["algorithm cosine 0.95"]
+        },
+        "integrate" : {
+            "NamaProduk" : ["subset", "algorithm overlap-coefficient 0.6"],
+            "Merek" : ["subset"],
+            "Varian" : ["subset"],
+            "Tekstur" : ["subset", "translate"],
+            "Penggunaan" : ["subset"],
+            "Ukuran" : ["subset", "algorithm jaccard 1"],
+            "URI" : ["algorithm cosine 0.95"]
+        }
     },
     "URI-element" : ["Merek", "NamaProduk"],
     "brand-organization" : {
@@ -46,11 +57,11 @@
         "produces-predicate" : "akgs:produces"
     },
     "data-source" : "data/shopee-v2-onscope.json",
-    "mapping-result" : "results/mapping-result.json",
-    "mapping-dict" : "results/mapping-dictionary.json",
-    "mapping-eval" : "results/mapping-eval.json",
-    "integrate-result" : "results/integrate-result.json",
-    "integrate-dict" : "results/integrate-dict.json",
-    "integrate-eval" : "results/integrate-eval.json",
-    "knowledge-graph" : "query/result-v2.ttl"
+    "mapping-result" : "results/v1/mapping-result.json",
+    "mapping-dict" : "results/v1/mapping-dictionary.json",
+    "mapping-eval" : "results/v1/mapping-eval.json",
+    "integrate-result" : "results/v1/integrate-result.json",
+    "integrate-dict" : "results/v1/integrate-dict.json",
+    "integrate-eval" : "results/v1/integrate-eval.json",
+    "knowledge-graph" : "query/result-v1.ttl"
 }

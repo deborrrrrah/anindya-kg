@@ -6,17 +6,21 @@ from strsimpy.sorensen_dice import SorensenDice
 from strsimpy.overlap_coefficient import OverlapCoefficient
 
 test_cases = [
-    ['Eyexpert The Volume Expert Mascara', 'Eyexpertvolume Expert Mascara'],
-    ['Cheek Lit Pressed Blush', 'Cheek Lit Cream Blush'],
-    ['Color Trend 2018 Lip Cream', 'Matte Lip Cream'],
-    ['Bedak Jerawat Energizing Aromatic', 'Masker Jerawat'],
-    ['Duo Make Up', 'Duo Eye Make Up'],
-    ['3.5 g', '3.7 g'],
-    ['Autocantik Package Natglow', 'Tinted Moisturizer'],
-    ['SariayuTrendWarna2011MoistpomeEyeShadow', 'SariayuColorTrendWarna2011MoistpomeEyeShadowPalette'],
-    ['SariayuColorTrend2017LiquidEyeShadow', 'SariayuColorTrend2016EyeShadow'],
-    ['0.2 g', '0.20 g'],
-    ['Blush On', 'On Blush']
+    # ['Eyexpert The Volume Expert Mascara', 'Eyexpertvolume Expert Mascara'],
+    # ['Cheek Lit Pressed Blush', 'Cheek Lit Cream Blush'],
+    # ['Color Trend 2018 Lip Cream', 'Matte Lip Cream'],
+    # ['Bedak Jerawat Energizing Aromatic', 'Masker Jerawat'],
+    # ['Duo Make Up', 'Duo Eye Make Up'],
+    # ['3.5 g', '3.7 g'],
+    # ['Autocantik Package Natglow', 'Tinted Moisturizer'],
+    # ['SariayuTrendWarna2011MoistpomeEyeShadow', 'SariayuColorTrendWarna2011MoistpomeEyeShadowPalette'],
+    # ['SariayuColorTrend2017LiquidEyeShadow', 'SariayuColorTrend2016EyeShadow'],
+    # ['0.2 g', '0.20 g'],
+    # ['Blush On', 'On Blush'],
+    ['WardahEverydayLuminousFacePowder', 'WardahEverydayLuminousCompactPowder'],
+    ['WardahInstaperfectMattesetterLipMattePaint', 'WardahInstaperfectMattetitudeMatteStainLipstick'],
+    ['WardahInstaperfectMatteFitPowderFoundation', 'WardahRefillInstaperfectMatteFitPowderFoundation'],
+    ['SariayuColorTrend16Eyeshadow','SariayuColorTrend2016EyeShadow']
 ]
 
 normalized_levenshtein = NormalizedLevenshtein()

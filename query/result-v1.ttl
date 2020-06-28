@@ -49,7 +49,7 @@ akgr:WardahEyexpertEyeLipMakeUpRemover a akgs:Product ;
 akgr:ParagonTechnologyAndInnovation akgs:produces akgr:WardahEyexpertEyeLipMakeUpRemover .
 
 akgr:WardahInstaperfectMattetitudeMatteStainLipstick a akgs:Product ;
-  akgs:name "Intense Matte Lipstick" ;
+  akgs:name "Instaperfect Mattetitude Matte Stain Lipstick" ;
   akgs:brand "Wardah" ;
   akgs:measurement "2.3 gr" ;
   akgs:variant "05 Easy Brownie" ;
@@ -751,7 +751,7 @@ akgr:SariayuColorTrend2019HydraLipTint a akgs:Product ;
 akgr:MartinaBerto akgs:produces akgr:SariayuColorTrend2019HydraLipTint .
 
 akgr:SariayuColorTrend2019LiteLipCream a akgs:Product ;
-  akgs:name "Color Trend 2018 Lip Cream" ;
+  akgs:name "Color Trend 2019 Lite Lip Cream" ;
   akgs:brand "Sariayu" ;
   akgs:variant "Wi 04" ;
   akgs:variant "Wi 01" ;
@@ -869,7 +869,7 @@ akgr:SariayuTwoWayCakeEnergizingAromaticRefill a akgs:Product ;
 akgr:MartinaBerto akgs:produces akgr:SariayuTwoWayCakeEnergizingAromaticRefill .
 
 akgr:SariayuBedakJerawatEnergizingAromatic a akgs:Product ;
-  akgs:name "Alas Bedak Energizing Aromatic" ;
+  akgs:name "Bedak Jerawat Energizing Aromatic" ;
   akgs:brand "Sariayu" ;
   akgs:variant "Kuning Gading" ;
   akgs:variant "Kuning Langsat" ;
@@ -979,7 +979,7 @@ akgr:SariayuPensilAlisPro a akgs:Product ;
 akgr:MartinaBerto akgs:produces akgr:SariayuPensilAlisPro .
 
 akgr:SariayuColorTrend2017EyeShadowKit a akgs:Product ;
-  akgs:name "Color Trend 2019 Eye Shadow" ;
+  akgs:name "Color Trend 2017 Eye Shadow Kit" ;
   akgs:texture "Powder" ;
   akgs:brand "Sariayu" ;
   akgs:variant "Gili Lombok" ;

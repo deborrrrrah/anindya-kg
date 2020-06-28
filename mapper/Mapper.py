@@ -151,7 +151,7 @@ class Mapper :
 
     return results
 
-  def __getSimilarText(self, text_1, text_2, key) :
+  def __getSimilarText(self, text_1, text_2, key, is_integrate) :
     """
     This function return the boolean is_similar, and chosen mapped_text based on text_1 and text_2.
     Type of similarity checking are : subset, translate then subset, and algorithm (with threshold).
@@ -176,8 +176,13 @@ class Mapper :
     is_similar = False
     mapped_text = None
 
+    if (is_integrate) :
+      configuration = self.config["similarity-checking"]["integrate"]
+    else :
+      configuration = self.config["similarity-checking"]["mapping"]
+    
     # Subset checking
-    for checking_type in self.config["similarity-checking"][key] :
+    for checking_type in configuration[key] :
       if ("subset" in checking_type) :
         if (text_1 in text_2 or text_2 in text_1) :
           is_similar = True
@@ -218,7 +223,7 @@ class Mapper :
 
     return (is_similar, mapped_text)
 
-  def __getSimilarTextDict(self, object, key) :
+  def __getSimilarTextDict(self, object, key, is_integrate) :
     """
     This function return a dictionary of objects (list of text, token_idx) based on its text similarity.
 
@@ -240,7 +245,7 @@ class Mapper :
         if (i == j) : 
           pass
         else :
-          is_similar, mapped_text = self.__getSimilarText(uniqueText[i], uniqueText[j], key) 
+          is_similar, mapped_text = self.__getSimilarText(uniqueText[i], uniqueText[j], key, is_integrate) 
           if (is_similar) :
             dictionary[uniqueText[i]] = mapped_text
     return dictionary
@@ -268,7 +273,7 @@ class Mapper :
       mapping_dict_item = {}
       for key in extracted_entity.keys() :
         extracted_entity[key] = self.__preprocess(key, extracted_entity[key])
-        mapping_dict_item[key] = self.__getSimilarTextDict(extracted_entity[key], key)
+        mapping_dict_item[key] = self.__getSimilarTextDict(extracted_entity[key], key, False)
         extracted_entity[key] = self.__getSimilarTextResult(extracted_entity[key], mapping_dict_item[key])
         extracted_entity[key].sort(key = lambda text: len(text[1]), reverse=True)
       mapping_dict.append(mapping_dict_item)
@@ -339,7 +344,7 @@ class Mapper :
     for key, values in result.items() :
       # Dictionary
       integrate_dict_item = {}
-      dictionary = self.__getSimilarTextDict(values, key)
+      dictionary = self.__getSimilarTextDict(values, key, True)
       integrate_dict_item[key] = dictionary
       integrate_dict.append(integrate_dict_item)
 
@@ -379,7 +384,7 @@ class Mapper :
       except KeyError :
         countNotValid += 1
     
-    uri_mapping_dict = self.__getSimilarTextDict(unique_URI, "URI")
+    uri_mapping_dict = self.__getSimilarTextDict(unique_URI, "URI", True)
     unique_URI = self.__getSimilarTextResult(unique_URI, uri_mapping_dict)
 
     print ('Valid product', len(unique_URI))
