@@ -53,7 +53,7 @@
         "semantic-prefix" : "akgs:",
         "organization-class" : "akgs:Organization",
         "product-class" : "akgs:Product",
-        "produces-predicate" : "akgs:produces"
+        "produces-predicate" : "akgs:owns"
     },
     "data-source" : "data/shopee-v2-onscope.json",
     "mapping-result" : "results/v2/mapping-result.json",
