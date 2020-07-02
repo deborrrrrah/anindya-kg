@@ -19,7 +19,7 @@
         },
         "integrate" : {
             "NamaProduk" : ["subset", "algorithm jaccard 0.95"],
-            "Merek" : ["subset"],
+            "Merek" : ["subset", "algorithm cosine 0.8"],
             "Varian" : ["subset"],
             "Tekstur" : ["subset", "translate"],
             "Penggunaan" : ["subset"],
@@ -29,11 +29,11 @@
     },
     "URI-element" : ["Merek", "NamaProduk"],
     "brand-organization" : {
-        "Emina" : "ParagonTechnologyAndInnovation",
-        "Wardah" : "ParagonTechnologyAndInnovation",
-        "Sariayu" : "MartinaBerto",
-        "PAC" : "MartinaBerto",
-        "Inez" : "KosmetikatamaSuperIndah",
+        "Emina" : "Paragon Technology And Innovation",
+        "Wardah" : "Paragon Technology and Innovation",
+        "Sariayu" : "Martina Berto",
+        "PAC" : "Martina Berto",
+        "Inez" : "Kosmetikatama Super Indah",
         "VIVA" : "Vitapharm"
     },
     "label-dictionary" : {
@@ -53,7 +53,12 @@
         "semantic-prefix" : "akgs:",
         "organization-class" : "akgs:Organization",
         "product-class" : "akgs:Product",
-        "produces-predicate" : "akgs:owns"
+        "brand-class" : "akgs:Brand",
+        "owns-predicate" : "akgs:owns",
+        "manufacturer-predicate" : "akgs:manufacturer",
+        "brand-predicate" : "akgs:brand",
+        "name-property" : "akgs:name",
+        "product-properties-text" : ["name", "texture", "usage", "measurement", "variant"]
     },
     "data-source" : "data/shopee-v2-onscope.json",
     "mapping-result" : "results/v2/mapping-result.json",

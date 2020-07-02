@@ -363,7 +363,40 @@ class Mapper :
   def __integrate(self, selected_entities) :
     selected_entities = self.__fillNoBrand(selected_entities)
 
-    # Generate URI
+    # Integrate URI Brand
+    unique_Brand = []
+    for idx, selected_entity in enumerate(selected_entities) :
+      unique_Brand.append((selected_entity['Merek'][0][0], [idx]))
+
+    brand_uri_mapping_dict = {}
+    brand_mapping_dict = {}
+
+    unique_brand_list = collections.defaultdict(list)
+    for key, value in unique_Brand:
+        unique_brand_list[key].extend(value)
+
+    unique_brand_list = list(unique_brand_list.items())
+
+    for brand in unique_brand_list :
+      for brand_key in self.config['brand-organization'].keys() :
+        is_similar, mapped_text = self.__getSimilarText(brand[0], brand_key, "Merek", True)
+        mapped_text = brand_key
+        if (is_similar) :
+          brand_mapping_dict[brand[0]] = mapped_text
+          brand_uri = ""
+          for word in mapped_text :
+            brand_uri += word
+          brand_uri_mapping_dict[mapped_text] = brand_uri
+          break
+
+    for idx in range(len(selected_entities)) :
+      brands = []
+      for i in range(len(selected_entities[idx]['Merek'])) :
+        brand = list(selected_entities[idx]['Merek'][i])
+        brands.append((brand_mapping_dict[selected_entities[idx]['Merek'][i][0]], selected_entities[idx]['Merek'][i][1]))
+      selected_entities[idx]['Merek'] = brands
+
+    # Generate URI Product
     for selected_entity in selected_entities :
       valid = True
       for uri_element in self.config['URI-element'] :
@@ -374,7 +407,7 @@ class Mapper :
       if (valid) :
         selected_entity['URI'] = self.__generateURI(selected_entity)
 
-    # Integrate URI
+    # Integrate URI Product
     countNotValid = 0
     unique_URI = []
     for idx, selected_entity in enumerate(selected_entities) :
@@ -400,6 +433,9 @@ class Mapper :
     all_integrate_dict = {}
     uri_mapping_dict[None] = ""
     all_integrate_dict['URI-dict'] = uri_mapping_dict
+    all_integrate_dict['brand-dict'] = brand_mapping_dict
+    all_integrate_dict['brand-uri-dict'] = brand_uri_mapping_dict
+
     product_integrate_dict = []
     for uri in unique_URI :
       products = list(filter(lambda elmt : uri_mapping_dict[elmt.get("URI")] == uri[0], selected_entities))

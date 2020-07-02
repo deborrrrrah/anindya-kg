@@ -46,6 +46,17 @@ class Builder :
     self.content = config["builder"]["content-prefix"]
     self.dataset = dataset
     self.config = config
+
+  def __getURI(self, text) :
+    """
+    This function return capitalized text in each word.
+    """
+    words = text.split(' ')
+    for i in range(len(words)):
+      words[i] = words[i].lower().capitalize().strip()
+    result = "".join(words)
+    return result
+
   
   def buildKG(self) :
     SPACE = " "
@@ -56,22 +67,41 @@ class Builder :
 
     label_dict = dict((en,id) for id, en in self.config["label-dictionary"].items())
 
-    # Brand declaration
-    for (brand, items) in self.dataset.items() :
-      self.content += self.config["builder"]["resource-prefix"] + brand + " a " + self.config["builder"]["organization-class"] + SPACE + DOT + ENTER + ENTER
+    brand_done = []
+    organization_done = []
+
+    # Brand and Organization declaration
+    for (brand, organization) in self.config["brand-organization"].items() :
+      if (organization.lower() not in organization_done) :
+        self.content += self.config["builder"]["resource-prefix"] + self.__getURI(organization) + " a " + self.config["builder"]["organization-class"] + SPACE 
+        self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["name-property"] + SPACE + APOSTROPHE + organization + APOSTROPHE + SPACE + DOT + ENTER + ENTER
+        organization_done.append(organization.lower())
       
-      # Item declaration and its properties
+      if (brand.lower() not in brand_done) :
+        self.content += self.config["builder"]["resource-prefix"] + self.__getURI(brand) + " a " + self.config["builder"]["brand-class"] + SPACE
+        self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["name-property"] + SPACE + APOSTROPHE + brand + APOSTROPHE + SPACE + DOT + ENTER
+
+        self.content += self.config["builder"]["resource-prefix"] +  self.__getURI(organization) + SPACE + self.config["builder"]["brand-predicate"] + SPACE + self.config["builder"]["resource-prefix"] + self.__getURI(brand) + SPACE + DOT + ENTER + ENTER
+        brand_done.append(brand.lower())
+
+    for (organization, items) in self.dataset.items() :
       for item in items :
+        # Product declaration and its properties
         for (item_name, item_description) in item.items() :
           self.content += self.config["builder"]["resource-prefix"] + item_name + " a " + self.config["builder"]["product-class"] + SPACE
           for (item_property_key, item_property_val) in item_description.items() :
-            if label_dict[item_property_key] in self.config["property-cardinality"]["multi-value"] :
-              for value in item_property_val :
-                self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["semantic-prefix"] + item_property_key + SPACE + APOSTROPHE + value + APOSTROPHE + SPACE
-            else : 
-              self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["semantic-prefix"] + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
-          self.content += DOT + ENTER + ENTER
-          # Item relationship to brand
-          self.content += self.config["builder"]["resource-prefix"] + brand + SPACE + self.config["builder"]["produces-predicate"] + SPACE + self.config["builder"]["resource-prefix"] + item_name + SPACE + DOT + ENTER + ENTER    
+            if (item_property_key in self.config["builder"]["product-properties-text"]) :
+              if label_dict[item_property_key] in self.config["property-cardinality"]["multi-value"] :
+                for value in item_property_val :
+                  self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["semantic-prefix"] + item_property_key + SPACE + APOSTROPHE + value + APOSTROPHE + SPACE
+              else : 
+                self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["semantic-prefix"] + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
+            else :
+              self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["semantic-prefix"] + item_property_key + SPACE + self.config["builder"]["resource-prefix"] + self.__getURI(item_property_val) + SPACE
+          
+          self.content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["manufacturer-predicate"] + SPACE + self.config["builder"]["resource-prefix"] + self.__getURI(organization) + SPACE + DOT + ENTER + ENTER
+          
+          # Product relationship to organization
+          self.content += self.config["builder"]["resource-prefix"] + self.__getURI(organization) + SPACE + self.config["builder"]["owns-predicate"] + SPACE + self.config["builder"]["resource-prefix"] + item_name + SPACE + DOT + ENTER + ENTER    
     
     return self.content
