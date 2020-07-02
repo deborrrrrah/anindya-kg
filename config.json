@@ -24,7 +24,7 @@
             "Tekstur" : ["subset", "translate"],
             "Penggunaan" : ["subset"],
             "Ukuran" : ["subset", "algorithm jaccard 1"],
-            "URI" : ["algorithm cosine 0.95"]
+            "URI" : ["algorithm normal-levenshtein 0.95"]
         }
     },
     "URI-element" : ["Merek", "NamaProduk"],

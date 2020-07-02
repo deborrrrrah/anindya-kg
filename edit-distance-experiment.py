@@ -20,7 +20,8 @@ test_cases = [
     ['WardahEverydayLuminousFacePowder', 'WardahEverydayLuminousCompactPowder'],
     ['WardahInstaperfectMattesetterLipMattePaint', 'WardahInstaperfectMattetitudeMatteStainLipstick'],
     ['WardahInstaperfectMatteFitPowderFoundation', 'WardahRefillInstaperfectMatteFitPowderFoundation'],
-    ['SariayuColorTrend16Eyeshadow','SariayuColorTrend2016EyeShadow']
+    ['SariayuColorTrend16Eyeshadow','SariayuColorTrend2016EyeShadow'],
+    ['SariayuColorTrend18EyeShadowKit','SariayuColorTrend16EyeShadowKit']
 ]
 
 normalized_levenshtein = NormalizedLevenshtein()
