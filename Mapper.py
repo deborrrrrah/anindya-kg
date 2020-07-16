@@ -7,19 +7,23 @@ import re
 from translate import Translator
 
 # Text similarity library
+
+# Character-based
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
 from strsimpy.jaro_winkler import JaroWinkler
+from strsimpy.ngram import NGram
+from strsimpy.longest_common_subsequence import LongestCommonSubsequence
+# Term-based
 from strsimpy.cosine import Cosine
 from strsimpy.jaccard import Jaccard
 from strsimpy.sorensen_dice import SorensenDice
 from strsimpy.overlap_coefficient import OverlapCoefficient
 
 class Mapper :
-  def __init__(self, object, config):
-      self.object = object
+  def __init__(self, config):
       self.config = config
 
-  def __extract(self) :
+  def extract(self, object) :
     """
     This function extract the token-label pair into words-label without BIO notation
     Input : 
@@ -30,7 +34,7 @@ class Mapper :
     """
     labels = self.config['label-dictionary'].keys()
     extracted_entities = []
-    for sentence_idx in range(len(self.object['tokens_labels'])) :
+    for sentence_idx in range(len(object['tokens_labels'])) :
       sentence_entities = {}
       
       # Initialize json list for each labels, and some variables
@@ -41,12 +45,12 @@ class Mapper :
       tokens = ""
       begin_word_token_idx = 0
       
-      for token_idx in range(len(self.object['tokens_labels'][sentence_idx])) :
+      for token_idx in range(len(object['tokens_labels'][sentence_idx])) :
         
         # Get current value of label, label BIO, and token
-        curr_label = self.object['tokens_labels'][sentence_idx][token_idx]['label'].split('-')[-1]
-        curr_label_BIO = self.object['tokens_labels'][sentence_idx][token_idx]['label'].split('-')[-2]
-        curr_token = self.object['tokens_labels'][sentence_idx][token_idx]['token']
+        curr_label = object['tokens_labels'][sentence_idx][token_idx]['label'].split('-')[-1]
+        curr_label_BIO = object['tokens_labels'][sentence_idx][token_idx]['label'].split('-')[-2]
+        curr_token = object['tokens_labels'][sentence_idx][token_idx]['token']
         curr_token_idx = token_idx
         
         if (curr_label != prev_label) :
@@ -71,7 +75,7 @@ class Mapper :
               tokens += curr_token + ' '
               begin_word_token_idx = deepcopy(curr_token_idx)
               # To check last token
-              if (curr_label_BIO == "I" and prev_label_BIO == "B" and token_idx == (len(self.object['tokens_labels'][sentence_idx]) - 1)) :
+              if (curr_label_BIO == "I" and prev_label_BIO == "B" and token_idx == (len(object['tokens_labels'][sentence_idx]) - 1)) :
                 sentence_entities[prev_label].append((tokens.strip(), begin_word_token_idx))
         
         # Assign previous variables with current variables for next iteration
@@ -82,7 +86,7 @@ class Mapper :
 
     return extracted_entities
 
-  def __removeWhitespace(self, text) :
+  def __remove_whitespace(self, text) :
     """
     This function return removed whitespaces text located outside and inside of the text.
     """
@@ -91,7 +95,7 @@ class Mapper :
     result = " ".join(words)
     return result.strip()
 
-  def __removePunctuation(self, text) :
+  def __remove_punctuation(self, text) :
     """
     This function return punctuation removed text.
     """
@@ -140,18 +144,18 @@ class Mapper :
         preprocessed_text = self.__capitalize(preprocessed_text)
         
       if key in self.config['preprocess']['removed-punct'] :
-        preprocessed_text = self.__removePunctuation(preprocessed_text)
+        preprocessed_text = self.__remove_punctuation(preprocessed_text)
       
       if key in self.config['preprocess']['lowercase'] :
         preprocessed_text = self.__lowercase(preprocessed_text)
 
-      preprocessed_text = self.__removeWhitespace(preprocessed_text)
+      preprocessed_text = self.__remove_whitespace(preprocessed_text)
 
       results.append((preprocessed_text.strip(), text[1]))
 
     return results
 
-  def __getSimilarText(self, text_1, text_2, key, is_integrate) :
+  def __get_similar_text(self, text_1, text_2, key, is_integrate) :
     """
     This function return the boolean is_similar, and chosen mapped_text based on text_1 and text_2.
     Type of similarity checking are : subset, translate then subset, and algorithm (with threshold).
@@ -223,7 +227,7 @@ class Mapper :
 
     return (is_similar, mapped_text)
 
-  def __getSimilarTextDict(self, object, key, is_integrate) :
+  def __get_similar_text_dict(self, object, key, is_integrate) :
     """
     This function return a dictionary of objects (list of text, token_idx) based on its text similarity.
 
@@ -245,12 +249,12 @@ class Mapper :
         if (i == j) : 
           pass
         else :
-          is_similar, mapped_text = self.__getSimilarText(uniqueText[i], uniqueText[j], key, is_integrate) 
+          is_similar, mapped_text = self.__get_similar_text(uniqueText[i], uniqueText[j], key, is_integrate) 
           if (is_similar) :
             dictionary[uniqueText[i]] = mapped_text
     return dictionary
 
-  def __getSimilarTextResult(self, object, similar_text_dict) :
+  def __get_similar_text_result(self, object, similar_text_dict) :
     """
     This function return the result of text mapping based on similar_text_dict.
     """
@@ -267,19 +271,19 @@ class Mapper :
     
     return list(results.items())
 
-  def __select(self, extracted_entities) :
+  def select(self, extracted_entities) :
     mapping_dict = []
     for extracted_entity in extracted_entities :
       mapping_dict_item = {}
       for key in extracted_entity.keys() :
         extracted_entity[key] = self.__preprocess(key, extracted_entity[key])
-        mapping_dict_item[key] = self.__getSimilarTextDict(extracted_entity[key], key, False)
-        extracted_entity[key] = self.__getSimilarTextResult(extracted_entity[key], mapping_dict_item[key])
+        mapping_dict_item[key] = self.__get_similar_text_dict(extracted_entity[key], key, False)
+        extracted_entity[key] = self.__get_similar_text_result(extracted_entity[key], mapping_dict_item[key])
         extracted_entity[key].sort(key = lambda text: len(text[1]), reverse=True)
       mapping_dict.append(mapping_dict_item)
     return mapping_dict, extracted_entities
 
-  def __getBrand(self, product_list, brand, keywords) :
+  def __get_brand(self, product_list, brand, keywords) :
     """
     This function return the brand manually input from configuration file based on keywords of the products.
 
@@ -294,7 +298,7 @@ class Mapper :
           return brand
     return None
   
-  def __fillNoBrand(self, selected_entities) :
+  def __fill_no_brand(self, selected_entities) :
     """
     This function return selected entities with fill na function for brand.
     """
@@ -306,13 +310,13 @@ class Mapper :
     # Iterate 
     for no_brand_idx in no_brand_list :
       for brand, keywords in self.config['manual-mapping'].items() :
-        manual_brand = self.__getBrand(selected_entities[no_brand_idx]['NamaProduk'], brand, keywords)
+        manual_brand = self.__get_brand(selected_entities[no_brand_idx]['NamaProduk'], brand, keywords)
         if manual_brand != None :
           selected_entities[no_brand_idx]['Merek'] = [(manual_brand, [0])]
     
     return selected_entities
   
-  def __generateURI(self, selected_entity) :
+  def __create_uri(self, selected_entity) :
     """
     This function return the uri generated from configuration of URI elements.
 
@@ -323,45 +327,8 @@ class Mapper :
         uri += word
     return uri
   
-  def __mergeProperties(self, uri, products) :
-    """
-    This function return dictionary and result of integrated products.
-    """
-    result = {}
-
-    for key in self.config['label-dictionary'].keys() :
-      result[key] = []
-
-    # Merge all products properties
-    for product in products :
-      for key, values in product.items() :
-        if (key != "URI") :
-          result[key] = result[key] + values
-    
-    # Map similar text and produces dictionary
-    final_result = {}
-    integrate_dict = []
-    for key, values in result.items() :
-      # Dictionary
-      integrate_dict_item = {}
-      dictionary = self.__getSimilarTextDict(values, key, True)
-      integrate_dict_item[key] = dictionary
-      integrate_dict.append(integrate_dict_item)
-
-      # Map text from product properties
-      integrated_data = self.__getSimilarTextResult(values, dictionary)
-      tuples = []
-      for i in range(len(integrated_data)) :
-        result = list(integrated_data[i])
-        result[1] = sum(result[1], [])
-        tuples.append((result[0], result[1]))
-      final_result[key] = tuples
-      final_result[key].sort(key = lambda text: len(text[1]), reverse=True)
-      
-    return integrate_dict, final_result
-
-  def __integrate(self, selected_entities) :
-    selected_entities = self.__fillNoBrand(selected_entities)
+  def create_product_uri(self, selected_entities, mapping_dict) : 
+    selected_entities = self.__fill_no_brand(selected_entities)
 
     # Integrate URI Brand
     unique_Brand = []
@@ -379,7 +346,7 @@ class Mapper :
 
     for brand in unique_brand_list :
       for brand_key in self.config['brand-organization'].keys() :
-        is_similar, mapped_text = self.__getSimilarText(brand[0], brand_key, "Merek", True)
+        is_similar, mapped_text = self.__get_similar_text(brand[0], brand_key, "Merek", True)
         mapped_text = brand_key
         if (is_similar) :
           brand_mapping_dict[brand[0]] = mapped_text
@@ -405,8 +372,51 @@ class Mapper :
           break
 
       if (valid) :
-        selected_entity['URI'] = self.__generateURI(selected_entity)
+        selected_entity['URI'] = self.__create_uri(selected_entity)
+    
+    mapping_dict['brand-dict'] = brand_mapping_dict
+    mapping_dict['brand-uri-dict'] = brand_uri_mapping_dict
+    
+    return mapping_dict, selected_entities
+  
+  def __merge_properties(self, uri, products) :
+    """
+    This function return dictionary and result of integrated products.
+    """
+    result = {}
 
+    for key in self.config['label-dictionary'].keys() :
+      result[key] = []
+
+    # Merge all products properties
+    for product in products :
+      for key, values in product.items() :
+        if (key != "URI") :
+          result[key] = result[key] + values
+    
+    # Map similar text and produces dictionary
+    final_result = {}
+    integrate_dict = []
+    for key, values in result.items() :
+      # Dictionary
+      integrate_dict_item = {}
+      dictionary = self.__get_similar_text_dict(values, key, True)
+      integrate_dict_item[key] = dictionary
+      integrate_dict.append(integrate_dict_item)
+
+      # Map text from product properties
+      integrated_data = self.__get_similar_text_result(values, dictionary)
+      tuples = []
+      for i in range(len(integrated_data)) :
+        result = list(integrated_data[i])
+        result[1] = sum(result[1], [])
+        tuples.append((result[0], result[1]))
+      final_result[key] = tuples
+      final_result[key].sort(key = lambda text: len(text[1]), reverse=True)
+      
+    return integrate_dict, final_result
+
+  def integrate(self, selected_entities, all_integrate_dict) :
     # Integrate URI Product
     countNotValid = 0
     unique_URI = []
@@ -417,8 +427,8 @@ class Mapper :
       except KeyError :
         countNotValid += 1
     
-    uri_mapping_dict = self.__getSimilarTextDict(unique_URI, "URI", True)
-    unique_URI = self.__getSimilarTextResult(unique_URI, uri_mapping_dict)
+    uri_mapping_dict = self.__get_similar_text_dict(unique_URI, "URI", True)
+    unique_URI = self.__get_similar_text_result(unique_URI, uri_mapping_dict)
 
     print ('Valid product', len(unique_URI))
     print ('Not valid product', countNotValid)
@@ -430,16 +440,13 @@ class Mapper :
     for brand in self.config['brand-organization'].keys() :
       result[self.config['brand-organization'][brand]] = []
 
-    all_integrate_dict = {}
     uri_mapping_dict[None] = ""
     all_integrate_dict['URI-dict'] = uri_mapping_dict
-    all_integrate_dict['brand-dict'] = brand_mapping_dict
-    all_integrate_dict['brand-uri-dict'] = brand_uri_mapping_dict
-
+    
     product_integrate_dict = []
     for uri in unique_URI :
       products = list(filter(lambda elmt : uri_mapping_dict[elmt.get("URI")] == uri[0], selected_entities))
-      integrate_dict, unique_property = self.__mergeProperties(uri, products)
+      integrate_dict, unique_property = self.__merge_properties(uri, products)
 
       product_integrate_dict = product_integrate_dict + integrate_dict
       
@@ -467,9 +474,10 @@ class Mapper :
 
     return all_integrate_dict, result
 
-
-  def mapToKG(self) :
-    extracted_entities = self.__extract()
-    mapping_dict, selected_entities = self.__select(extracted_entities)
-    integrate_dict, integrated_entities = self.__integrate(selected_entities)
+  def map(self, object) :
+    extracted_entities = self.extract(object)
+    mapping_dict, selected_entities = self.select(extracted_entities)
+    all_integrate_dict = {}
+    all_integrate_dict, selected_entities = self.create_product_uri(selected_entities, all_integrate_dict)
+    integrate_dict, integrated_entities = self.integrate(selected_entities, all_integrate_dict)
     return mapping_dict, integrate_dict, selected_entities, integrated_entities

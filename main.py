@@ -1,5 +1,5 @@
-from builder.Builder import Builder
-from mapper.Mapper import Mapper
+from Builder import Builder
+from Mapper import Mapper
 import json
 
 config_filename = "config.json"
@@ -23,8 +23,8 @@ def writeFile(content, filename) :
 config = readJSON(config_filename)
 dataset = readJSON(config['data-source'])
 
-mapper = Mapper(dataset, config)
-mapping_dict, integrate_dict, mapping_result, integrate_result = mapper.mapToKG()
+mapper = Mapper(config)
+mapping_dict, integrate_dict, mapping_result, integrate_result = mapper.map(dataset)
 
 # print ("\nExample Mapping Result")
 # print (mapping_dict[0:2], "\n")
@@ -79,7 +79,7 @@ writeJSON(integrate_dict, config['integrate-dict'])
 writeJSON(mapping_result, config['mapping-result'])
 writeJSON(integrate_result, config['integrate-result'])
 
-builder = Builder(integrate_result, config)
-kg_result = builder.buildKG()
+builder = Builder(config)
+kg_result = builder.build(integrate_result)
 
 writeFile(kg_result, config['knowledge-graph'])
