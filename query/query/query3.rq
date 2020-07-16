@@ -3,4 +3,4 @@ PREFIX akgr: <https://deborrrrrah.github.io/resource/>
 
 SELECT ?product ?variant
 WHERE
-{ akgr:ParagonTechnologyAndInnovation akgs:owns ?product . ?product akgs:brand "Emina" . ?product akgs:usage "Mata" . ?product akgs:variant ?variant .}  
+{ akgr:Paragon_Technology_And_Innovation akgs:owns ?product . ?product akgs:brand "Emina" . ?product akgs:usage "Mata" . ?product akgs:variant ?variant .}  

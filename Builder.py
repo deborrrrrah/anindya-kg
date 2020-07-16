@@ -53,7 +53,7 @@ class Builder :
     words = text.split(' ')
     for i in range(len(words)):
       words[i] = words[i].lower().capitalize().strip()
-    result = "".join(words)
+    result = "_".join(words)
     return result
 
   
@@ -87,7 +87,7 @@ class Builder :
       for item in items :
         # Product declaration and its properties
         for (item_name, item_description) in item.items() :
-          self.__content += self.config["builder"]["resource-prefix"] + item_name + " a " + self.config["builder"]["product-class"] + SPACE
+          self.__content += self.config["builder"]["resource-prefix"] + self.__create_uri(item_name) + " a " + self.config["builder"]["product-class"] + SPACE
           for (item_property_key, item_property_val) in item_description.items() :
             if (item_property_key in self.config["builder"]["product-properties-text"]) :
               if label_dict[item_property_key] in self.config["property-cardinality"]["multi-value"] :
@@ -101,6 +101,6 @@ class Builder :
           self.__content += SEMICOLON + ENTER + SPACE + SPACE + self.config["builder"]["manufacturer-predicate"] + SPACE + self.config["builder"]["resource-prefix"] + self.__create_uri(organization) + SPACE + DOT + ENTER + ENTER
           
           # Product relationship to organization
-          self.__content += self.config["builder"]["resource-prefix"] + self.__create_uri(organization) + SPACE + self.config["builder"]["owns-predicate"] + SPACE + self.config["builder"]["resource-prefix"] + item_name + SPACE + DOT + ENTER + ENTER    
+          self.__content += self.config["builder"]["resource-prefix"] + self.__create_uri(organization) + SPACE + self.config["builder"]["owns-predicate"] + SPACE + self.config["builder"]["resource-prefix"] + self.__create_uri(item_name) + SPACE + DOT + ENTER + ENTER    
     
     return self.__content
