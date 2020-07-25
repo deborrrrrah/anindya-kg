@@ -6,15 +6,8 @@ import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 from transformers import BertTokenizer, BertConfig, XLMRobertaTokenizer, XLMRobertaConfig, DistilBertTokenizer, DistilBertConfig
 
-from keras.preprocessing.sequence import pad_sequences
-from sklearn.model_selection import train_test_split
-
-# from google.colab import drive
-# drive.mount('/content/drive', force_remount=True)
-
-# ROOT_PATH = '/content/drive/My Drive/Tugas/Tugas Semester 8/Tugas Akhir/13516152 - Deborah Aprilia Josephine/'
+ROOT_PATH = '/content/drive/My Drive/Tugas/Tugas Semester 8/Tugas Akhir/13516152 - Deborah Aprilia Josephine/';
 MODEL_PATH = 'model/'
-ROOT_PATH = ""
 
 def read_json(filename) :
   with open(filename, 'r', encoding="utf8") as f:
@@ -28,29 +21,38 @@ def write_json(obj, filename) :
 
 class FineTunedModel :
   def __init__(self, model_type="mbert") :
-    self.__tag_values = ['B-Merek', 'O', 'B-NamaProduk', 'I-NamaProduk', 'B-Varian', 'I-Varian', 'B-Ukuran', 'I-Ukuran', 'B-Penggunaan', 'I-Penggunaan', 'B-Tekstur', 'I-Tekstur', 'PAD']
+    self.__tag_values = ['B-Merek', 'I-Merek', 'O', 'B-NamaProduk', 'I-NamaProduk', 'B-Varian', 'I-Varian', 'B-Ukuran', 'I-Ukuran', 'B-Penggunaan', 'I-Penggunaan', 'B-Tekstur', 'I-Tekstur', 'PAD']
     self.__model_type = model_type
-    if model_type == "xlmr" :
-      MODEL_FILENAME = "model-XMLR.pth"
+    if "xlmr" in model_type :
+      if "full-fine-tuned" in model_type :
+        MODEL_FILENAME = "model-xlmr-full-fine-tuned.pth"
+      else :
+        MODEL_FILENAME = "model-xlmr.pth"
       MODEL_NAME = 'xlm-roberta-base'
       self.__tokenizer = XLMRobertaTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
 
-    elif model_type == "mbert" :
-      MODEL_FILENAME = "model-mBERT.pth"
+    elif "mbert" in model_type :
+      if "full-fine-tuned" in model_type :
+        MODEL_FILENAME = "model-mbert-full-fine-tuned.pth"
+      else :
+        MODEL_FILENAME = "model-mbert.pth"
       MODEL_NAME = 'bert-base-multilingual-cased'
       self.__tokenizer = BertTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
 
-    elif model_type == "distilbert" :
-      MODEL_FILENAME = "model-DistilBERT.pth"
+    elif "distilbert" in model_type :
+      if "full-fine-tuned" in model_type :
+        MODEL_FILENAME = "model-distilbert-full-fine-tuned.pth"
+      else :
+        MODEL_FILENAME = "model-distilbert.pth"
       MODEL_NAME = 'distilbert-base-multilingual-cased'
       self.__tokenizer = DistilBertTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
 
-    elif model_type == "no-tuning-bert" :
+    elif model_type == "no-tuning-bert-labelling" :
       MODEL_FILENAME = "model-mbert-labelling-no-tuning.pth"
       MODEL_NAME = 'bert-base-multilingual-cased'
       self.__tokenizer = BertTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
 
-    elif model_type == "full-fine-tuning-bert" :
+    elif model_type == "full-fine-tuning-bert-labelling" :
       MODEL_FILENAME = "model-mbert-labelling-full-fine-tuning.pth"
       MODEL_NAME = 'bert-base-multilingual-cased'
       self.__tokenizer = BertTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
@@ -77,7 +79,7 @@ class FineTunedModel :
     result_label = None
     
     for token, label_idx in zip(tokens, label_indices[0]):
-      if self.__model_type == "xlmr" :
+      if "xlmr" in self.__model_type :
         if token.startswith("▁"):
           if result_token != "" :
             new_labels.append(result_label)
@@ -97,8 +99,12 @@ class FineTunedModel :
       elmt['token'] = token
       elmt['label'] = label
       result.append(elmt)
+    # Remove [CLS] for mbert and distilbert, and <s> for xlmr
     del result[0]
-    del result[-1]
+
+    # Remove [SEP] for mbert and distilbert
+    if "bert" in self.__model_type : 
+      del result[-1]
     return result
 
   def predict(self, texts) :
@@ -106,9 +112,9 @@ class FineTunedModel :
     tokens_labels = []
     count = 0
     for idx, text in enumerate(texts) :
-      result = self.__predict_text(text)
+      result = predict_text(self, text)
       if result != None :
-        tokens_labels.append(self.__predict_text(text))
+        tokens_labels.append(predict_text(self, text))
       else :
         count += 1
     result['tokens_labels'] = tokens_labels

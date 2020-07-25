@@ -34,7 +34,10 @@
         "Sariayu" : "Martina Berto",
         "PAC" : "Martina Berto",
         "Inez" : "Kosmetikatama Super Indah",
-        "VIVA" : "Vitapharm"
+        "VIVA" : "Vitapharm",
+        "Bioaqua" : "The Bioaqua",
+        "Smooto" : "Global Medical Thailand", 
+        "Maybelline" : "Loreal"
     },
     "label-dictionary" : {
         "NamaProduk" : "name",
@@ -42,7 +45,7 @@
         "Varian" : "variant",
         "Tekstur" : "texture",
         "Penggunaan" : "usage",
-        "Ukuran" : "measurement"
+        "Ukuran" : "size"
     },
     "manual-mapping" : {
         "Wardah" : ["Instaperfect"]
@@ -58,7 +61,7 @@
         "manufacturer-predicate" : "akgs:manufacturer",
         "brand-predicate" : "akgs:brand",
         "name-property" : "akgs:name",
-        "product-properties-text" : ["name", "texture", "usage", "measurement", "variant"]
+        "product-properties-text" : ["name", "texture", "usage", "size", "variant"]
     },
     "data-source" : "data/shopee-v2-onscope.json",
     "mapping-result" : "results/v2/mapping-result.json",
