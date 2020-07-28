@@ -37,6 +37,27 @@ akgr:Viva a akgs:Brand ;
   akgs:name "VIVA" .
 akgr:Vitapharm akgs:brand akgr:Viva .
 
+akgr:The_Bioaqua a akgs:Organization ;
+  akgs:name "The Bioaqua" .
+
+akgr:Bioaqua a akgs:Brand ;
+  akgs:name "Bioaqua" .
+akgr:The_Bioaqua akgs:brand akgr:Bioaqua .
+
+akgr:Global_Medical_Thailand a akgs:Organization ;
+  akgs:name "Global Medical Thailand" .
+
+akgr:Smooto a akgs:Brand ;
+  akgs:name "Smooto" .
+akgr:Global_Medical_Thailand akgs:brand akgr:Smooto .
+
+akgr:Loreal a akgs:Organization ;
+  akgs:name "Loreal" .
+
+akgr:Maybelline a akgs:Brand ;
+  akgs:name "Maybelline" .
+akgr:Loreal akgs:brand akgr:Maybelline .
+
 akgr:Emina_Magic_Potion a akgs:Product ;
   akgs:name "Magic Potion" ;
   akgs:brand akgr:Emina ;

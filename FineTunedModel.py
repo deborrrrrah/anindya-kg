@@ -20,42 +20,38 @@ def write_json(obj, filename) :
   print ("Successfully write JSON obj to", filename)
 
 class FineTunedModel :
-  def __init__(self, model_type="mbert") :
+  def __init__(self, model_type="mbert", version=1, fine_tuned_type="full") :
     self.__tag_values = ['B-Merek', 'I-Merek', 'O', 'B-NamaProduk', 'I-NamaProduk', 'B-Varian', 'I-Varian', 'B-Ukuran', 'I-Ukuran', 'B-Penggunaan', 'I-Penggunaan', 'B-Tekstur', 'I-Tekstur', 'PAD']
     self.__model_type = model_type
-    if "xlmr" in model_type :
-      if "full-fine-tuned" in model_type :
-        MODEL_FILENAME = "model-xlmr-full-fine-tuned.pth"
-      else :
-        MODEL_FILENAME = "model-xlmr.pth"
+
+    valid_models = ["xlmr", "mbert", "distilbert", "no-tuning-bert-labelling", "full-fine-tuning-bert-labelling"]
+    valid_fine_tuned_type = ["full", "partial"]
+
+    if model_type in valid_models and fine_tuned_type in valid_fine_tuned_type :
+      MODEL_FILENAME = model_type + "_v" + str(version) + "_" + fine_tuned_type + ".pth"
+    else :
+      MODEL_FILENAME = "mbert_v1_full.pth"
+      model_type = "mbert"
+
+    if model_type == "xlmr":
       MODEL_NAME = 'xlm-roberta-base'
       self.__tokenizer = XLMRobertaTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
 
-    elif "mbert" in model_type :
-      if "full-fine-tuned" in model_type :
-        MODEL_FILENAME = "model-mbert-full-fine-tuned.pth"
-      else :
-        MODEL_FILENAME = "model-mbert.pth"
+    elif model_type == "mbert":
       MODEL_NAME = 'bert-base-multilingual-cased'
       self.__tokenizer = BertTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
 
-    elif "distilbert" in model_type :
-      if "full-fine-tuned" in model_type :
-        MODEL_FILENAME = "model-distilbert-full-fine-tuned.pth"
-      else :
-        MODEL_FILENAME = "model-distilbert.pth"
+    elif model_type == "distilbert" :
       MODEL_NAME = 'distilbert-base-multilingual-cased'
       self.__tokenizer = DistilBertTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
 
-    elif model_type == "no-tuning-bert-labelling" :
-      MODEL_FILENAME = "model-mbert-labelling-no-tuning.pth"
+    else :
       MODEL_NAME = 'bert-base-multilingual-cased'
       self.__tokenizer = BertTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
-
-    elif model_type == "full-fine-tuning-bert-labelling" :
-      MODEL_FILENAME = "model-mbert-labelling-full-fine-tuning.pth"
-      MODEL_NAME = 'bert-base-multilingual-cased'
-      self.__tokenizer = BertTokenizer.from_pretrained(MODEL_NAME, do_lower_case=False)
+      if model_type == "no-tuning-bert-labelling" :
+        MODEL_FILENAME = "model-mbert-labelling-no-tuning.pth"
+      elif model_type == "full-fine-tuning-bert-labelling" :
+        MODEL_FILENAME = "model-mbert-labelling-full-fine-tuning.pth"
     
     self.__model = torch.load(ROOT_PATH + MODEL_PATH + MODEL_FILENAME).cuda()
 
@@ -112,9 +108,9 @@ class FineTunedModel :
     tokens_labels = []
     count = 0
     for idx, text in enumerate(texts) :
-      result = predict_text(self, text)
+      result = predict_text(self,text)
       if result != None :
-        tokens_labels.append(predict_text(self, text))
+        tokens_labels.append(predict_text(self,text))
       else :
         count += 1
     result['tokens_labels'] = tokens_labels
