@@ -1,9 +1,10 @@
+# Apache Jena Query Example
+- Linux
 query/apache-jena-3.14.0/bin/arq --data query/result.ttl --query query/query/query1.rq
-
+- Windows
 sparql.bat --data query/result-v2.ttl --query query/query/query1.rq
 
+# Graph Viz
 python ontology-visualization/ontology_viz.py -o product-kg/results/result.dot product-kg/query/result-v2.ttl -O product-kg/query/ontology.ttl
-
 dot -Ksfdp -Tsvg -o  product-kg/results/result.svg  product-kg/results/result.dot -Gcharset=latin1
-
 dot -Ksfdp -x -Goverlap=scale -Tpng -o  product-kg/results/result.png  product-kg/results/result.dot -Gcharset=latin1
