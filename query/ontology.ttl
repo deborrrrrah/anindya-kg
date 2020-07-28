@@ -1,0 +1,36 @@
+@prefix akgs: <https://deborrrrrah.github.io/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology Metadata
+<https://deborrrrrah.github.io/ns> dct:creator [ rdfs:label "Deborah Aprilia Josephine" ] .
+<https://deborrrrrah.github.io/ns> dct:title "Anindya - Indonesia Cosmetic Knowledge Graph"@en .
+<https://deborrrrrah.github.io/ns> dct:description "An ontology for e-Commerce cosmetics products"@en .
+<https://deborrrrrah.github.io/ns> dct:creator [ rdfs:label "Deborah Aprilia Josephine" ] .
+
+# Set of Concepts (class)
+akgs:Organization rdf:type rdfs:Class .
+akgs:Product rdf:type rdfs:Class .
+akgs:Brand rdf:type rdfs:Class .
+
+# Properties of Organization, Product and Brand Class
+akgs:name rdf:type rdfs:Property .
+
+#  Properties of Product Class
+akgs:measurement rdf:type rdf:Property .
+akgs:variant rdf:type rdf:Property .
+akgs:texture rdf:type rdf:Property .
+akgs:usage rdf:type rdf:Property .
+
+# Set of Relations (property)
+akgs:owns rdf:type rdf:Property .
+akgs:owns rdfs:range akgs:Product .
+
+akgs:brand rdf:type rdf:Property .
+akgs:brand rdfs:range akgs:Brand .
+
+akgs:manufacturer rdf:type rdf:Property .
+akgs:manufacturer rdfs:range akgs:Organization .
