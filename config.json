@@ -20,7 +20,7 @@
         "integrate" : {
             "NamaProduk" : ["subset", "algorithm jaccard 0.95"],
             "Merek" : ["subset", "algorithm cosine 0.8"],
-            "Varian" : ["subset"],
+            "Varian" : ["subset", "algorithm jaccard 0.95"],
             "Tekstur" : ["subset", "translate"],
             "Penggunaan" : ["subset"],
             "Ukuran" : ["subset", "algorithm jaccard 1"],

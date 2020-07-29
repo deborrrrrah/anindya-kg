@@ -3,4 +3,4 @@ PREFIX akgr: <https://deborrrrrah.github.io/resource/>
 
 DESCRIBE ?product
 WHERE
-{ akgr:Martina_Berto akgs:owns ?product . ?product akgs:size "15 g" .}  
+{ ?product akgs:name "Magic Potion" .}  
