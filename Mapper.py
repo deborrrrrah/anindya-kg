@@ -3,11 +3,13 @@ from copy import deepcopy
 import collections
 import re
 
+# Stemmer
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+
 # Translation library
 from translate import Translator
 
 # Text similarity library
-
 # Character-based
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
 from strsimpy.jaro_winkler import JaroWinkler
@@ -122,6 +124,18 @@ class Mapper :
     result = " ".join(words)
     return result
   
+  def __stem(self, text) :
+    """
+    This function return stemmed text in each word.
+    """
+    factory = StemmerFactory()
+    stemmer = factory.create_stemmer()
+    words = text.split(' ')
+    for i in range(len(words)) :
+      words[i] = stemmer.stem(words[i])
+    result = " ".join(words)
+    return result
+  
   def __preprocess(self, key, list_of_text) :
     """
     This function return preprocessed list_of_text based on key configuration.
@@ -148,6 +162,9 @@ class Mapper :
       
       if key in self.config['preprocess']['lowercase'] :
         preprocessed_text = self.__lowercase(preprocessed_text)
+
+      if key in self.config['preprocess']['stem'] :
+        preprocessed_text = self.__stem(preprocessed_text)
 
       preprocessed_text = self.__remove_whitespace(preprocessed_text)
 
@@ -206,24 +223,29 @@ class Mapper :
       # Edit Distance Condition
       if ("algorithm" in checking_type) :
         words = checking_type.split(" ")
-        threshold = float(words[2]) if (len(words) == 3) else 1.0
-        if (words[1] == "normal-levenshtein") : similarity_function = NormalizedLevenshtein()
-        elif (words[1] == "jaro-winkler") : similarity_function = JaroWinkler()
-        elif (words[1] == "cosine") : similarity_function = Cosine(1)
-        elif (words[1] == "jaccard") : similarity_function = Jaccard(1)
-        elif (words[1] == "sorensen-dice") : similarity_function = SorensenDice()
-        elif (words[1] == "overlap-coefficient") : similarity_function = OverlapCoefficient()
-        try :
-          if (similarity_function.similarity(text_1, text_2) >= threshold) :
-            is_similar = True
-            mapped_text = text_1 if (len(text_1) > len(text_2)) else text_2
-        except ZeroDivisionError :
-          # Last checking with similarity function
-          similarity_function = Jaccard(1)
-          threshold = 1.0
-          if (similarity_function.similarity(text_1, text_2) >= threshold) :
-            is_similar = True
-            mapped_text = text_1
+        is_similar = True
+        if (len(words) % 2 == 1 and len(words) > 1) :
+          for i in range(len(words) // 2) :
+            threshold = float(words[(i * 2) + 2]) if (len(words) == 3) else 1.0
+            if (words[(i * 2) + 1] == "normal-levenshtein") : similarity_function = NormalizedLevenshtein()
+            elif (words[(i * 2) + 1] == "jaro-winkler") : similarity_function = JaroWinkler()
+            elif (words[(i * 2) + 1] == "cosine") : similarity_function = Cosine(1)
+            elif (words[(i * 2) + 1] == "jaccard") : similarity_function = Jaccard(1)
+            elif (words[(i * 2) + 1] == "sorensen-dice") : similarity_function = SorensenDice()
+            elif (words[(i * 2) + 1] == "overlap-coefficient") : similarity_function = OverlapCoefficient()
+            try :
+              if (similarity_function.similarity(text_1, text_2) >= threshold and is_similar) :
+                mapped_text = text_1 if (len(text_1) > len(text_2)) else text_2
+              else :
+                is_similar = False
+                mapped_text = None
+            except ZeroDivisionError :
+              # Last checking with similarity function
+              similarity_function = Jaccard(1)
+              threshold = 1.0
+              if (similarity_function.similarity(text_1, text_2) >= threshold) :
+                is_similar = True
+                mapped_text = text_1
 
     return (is_similar, mapped_text)
 
@@ -334,7 +356,15 @@ class Mapper :
     # Integrate URI Brand
     unique_brand = []
     for idx, selected_entity in enumerate(objects) :
-      unique_brand.append((selected_entity['Merek'][0][0], [idx]))
+      if len(selected_entity['Merek']) > 0 :
+        try :
+          unique_brand.append((selected_entity['Merek'][0][0], [idx]))
+        except KeyError :
+          pass
+      # except IndexError :
+      #   print (selected_entity)
+      #   print (idx)
+      #   raise KeyboardInterrupt
 
     brand_uri_dictionary = {}
     brand_dictionary = {}
@@ -361,7 +391,10 @@ class Mapper :
       brands = []
       for i in range(len(objects[idx]['Merek'])) :
         brand = list(objects[idx]['Merek'][i])
-        brands.append((brand_dictionary[objects[idx]['Merek'][i][0]], objects[idx]['Merek'][i][1]))
+        try :
+          brands.append((brand_dictionary[objects[idx]['Merek'][i][0]], objects[idx]['Merek'][i][1]))
+        except KeyError :
+          pass
       objects[idx]['Merek'] = brands
 
     # Generate URI Product

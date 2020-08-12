@@ -1,0 +1,71 @@
+{
+    "preprocess" : {
+        "capitalize" : ["NamaProduk", "Penggunaan", "Tekstur", "Merek", "Varian"],
+        "removed-punct" : ["Varian", "NamaProduk"],
+        "lowercase" : ["Ukuran"]
+    },
+    "property-cardinality" : {
+        "single-value" : ["NamaProduk", "Merek", "Ukuran"],
+        "multi-value" : ["Varian", "Penggunaan", "Tekstur"]
+    },
+    "similarity-checking" : {
+        "mapping" : {
+            "NamaProduk" : ["subset", "algorithm jaccard 0.8"],
+            "Merek" : ["subset"],
+            "Varian" : ["subset"],
+            "Tekstur" : ["subset", "translate"],
+            "Penggunaan" : ["subset"],
+            "Ukuran" : ["subset", "algorithm jaro-winkler 0.9"]
+        },
+        "integrate" : {
+            "NamaProduk" : ["subset", "algorithm jaro-winkler 0.9 jaccard 0.8"],
+            "Merek" : ["subset", "algorithm jaro-winkler 0.9"],
+            "Varian" : ["subset", "algorithm jaro-winkler 0.9"],
+            "Tekstur" : ["subset", "translate"],
+            "Penggunaan" : ["subset"],
+            "Ukuran" : ["subset", "algorithm jaccard 1"],
+            "URI" : ["algorithm jaccard 0.9"]
+        }
+    },
+    "URI-element" : ["Merek", "NamaProduk"],
+    "brand-organization" : {
+        "Emina" : "Paragon Technology And Innovation",
+        "Wardah" : "Paragon Technology and Innovation",
+        "Sariayu" : "Martina Berto",
+        "PAC" : "Martina Berto",
+        "Inez" : "Kosmetikatama Super Indah",
+        "VIVA" : "Vitapharm"
+    },
+    "label-dictionary" : {
+        "NamaProduk" : "name",
+        "Merek" : "brand",
+        "Varian" : "variant",
+        "Tekstur" : "texture",
+        "Penggunaan" : "usage",
+        "Ukuran" : "size"
+    },
+    "manual-mapping" : {
+        "Wardah" : ["Instaperfect"]
+    },
+    "builder" : {
+        "content-prefix" : "@prefix akgr: <https://deborrrrrah.github.io/resource/> .\n@prefix akgs: <https://deborrrrrah.github.io/ns#> .\n\n",
+        "resource-prefix" : "akgr:",
+        "semantic-prefix" : "akgs:",
+        "organization-class" : "akgs:Organization",
+        "product-class" : "akgs:Product",
+        "brand-class" : "akgs:Brand",
+        "owns-predicate" : "akgs:owns",
+        "manufacturer-predicate" : "akgs:manufacturer",
+        "brand-predicate" : "akgs:brand",
+        "name-property" : "akgs:name",
+        "product-properties-text" : ["name", "texture", "usage", "size", "variant"]
+    },
+    "data-source" : ["data/shopee-label.json", "data/tokped_esw-label.json"],
+    "mapping-result" : "results/v_final_1/mapping-result.json",
+    "mapping-dict" : "results/v_final_1/mapping-dictionary.json",
+    "mapping-eval" : "results/v_final_1/mapping-eval.json",
+    "integrate-result" : "results/v_final_1/integrate-result.json",
+    "integrate-dict" : "results/v_final_1/integrate-dict.json",
+    "integrate-eval" : "results/v_final_1/integrate-eval.json",
+    "knowledge-graph" : "query/result-v_final_1.ttl"
+}

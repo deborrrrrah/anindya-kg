@@ -21,7 +21,14 @@ def writeFile(content, filename) :
   print ("Successfully write file content to", filename)
 
 config = readJSON(config_filename)
-dataset = readJSON(config['data-source'])
+dataset = {}
+datas = []
+for filename in config['data-source'] :
+  data = readJSON(filename)["tokens_labels"]
+  for d in data :
+    datas.append(d)
+print ("Total data", len(datas))
+dataset["tokens_labels"] = datas
 
 mapper = Mapper(config)
 mapping_dict, integrate_dict, mapping_result, integrate_result = mapper.map(dataset)

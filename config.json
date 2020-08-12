@@ -2,29 +2,30 @@
     "preprocess" : {
         "capitalize" : ["NamaProduk", "Penggunaan", "Tekstur", "Merek", "Varian"],
         "removed-punct" : ["Varian", "NamaProduk"],
-        "lowercase" : ["Ukuran"]
+        "lowercase" : ["Ukuran"],
+        "stem" : ["Penggunaan"]
     },
     "property-cardinality" : {
-        "single-value" : ["NamaProduk", "Tekstur", "Merek", "Ukuran"],
-        "multi-value" : ["Varian", "Penggunaan"]
+        "single-value" : ["NamaProduk", "Merek", "Ukuran"],
+        "multi-value" : ["Varian", "Penggunaan", "Tekstur"]
     },
     "similarity-checking" : {
         "mapping" : {
-            "NamaProduk" : ["subset", "algorithm overlap-coefficient 0.6"],
+            "NamaProduk" : ["subset", "algorithm jaccard 0.8"],
             "Merek" : ["subset"],
             "Varian" : ["subset"],
             "Tekstur" : ["subset", "translate"],
             "Penggunaan" : ["subset"],
-            "Ukuran" : ["subset", "algorithm jaccard 1"]
+            "Ukuran" : ["subset", "algorithm jaro-winkler 0.9"]
         },
         "integrate" : {
-            "NamaProduk" : ["subset", "algorithm jaccard 0.95"],
-            "Merek" : ["subset", "algorithm cosine 0.8"],
-            "Varian" : ["subset", "algorithm jaccard 0.95"],
+            "NamaProduk" : ["subset", "algorithm jaro-winkler 0.9 jaccard 0.8"],
+            "Merek" : ["subset", "algorithm jaro-winkler 0.9"],
+            "Varian" : ["subset", "algorithm jaro-winkler 0.9"],
             "Tekstur" : ["subset", "translate"],
             "Penggunaan" : ["subset"],
             "Ukuran" : ["subset", "algorithm jaccard 1"],
-            "URI" : ["algorithm normal-levenshtein 0.95"]
+            "URI" : ["algorithm jaccard 0.9"]
         }
     },
     "URI-element" : ["Merek", "NamaProduk"],
@@ -34,10 +35,7 @@
         "Sariayu" : "Martina Berto",
         "PAC" : "Martina Berto",
         "Inez" : "Kosmetikatama Super Indah",
-        "VIVA" : "Vitapharm",
-        "Bioaqua" : "The Bioaqua",
-        "Smooto" : "Global Medical Thailand", 
-        "Maybelline" : "Loreal"
+        "VIVA" : "Vitapharm"
     },
     "label-dictionary" : {
         "NamaProduk" : "name",
@@ -63,12 +61,12 @@
         "name-property" : "akgs:name",
         "product-properties-text" : ["name", "texture", "usage", "size", "variant"]
     },
-    "data-source" : "data/shopee-v2-onscope.json",
-    "mapping-result" : "results/v2/mapping-result.json",
-    "mapping-dict" : "results/v2/mapping-dictionary.json",
-    "mapping-eval" : "results/v2/mapping-eval.json",
-    "integrate-result" : "results/v2/integrate-result.json",
-    "integrate-dict" : "results/v2/integrate-dict.json",
-    "integrate-eval" : "results/v2/integrate-eval.json",
-    "knowledge-graph" : "query/result-v2.ttl"
+    "data-source" : ["data/shopee-label.json", "data/tokped_esw-label.json"],
+    "mapping-result" : "results/v_final_2/mapping-result.json",
+    "mapping-dict" : "results/v_final_2/mapping-dictionary.json",
+    "mapping-eval" : "results/v_final_2/mapping-eval.json",
+    "integrate-result" : "results/v_final_2/integrate-result.json",
+    "integrate-dict" : "results/v_final_2/integrate-dict.json",
+    "integrate-eval" : "results/v_final_2/integrate-eval.json",
+    "knowledge-graph" : "query/result-v_final_2.ttl"
 }

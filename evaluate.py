@@ -1,12 +1,14 @@
 import json
 import pandas as pd
 
-config = "config.json"
-VERSION = 2
-export_filename = "evaluation/v"+ str(VERSION) + "/evalute.xlsx"
-export_mapping_dict_filename = "evaluation/v"+ str(VERSION) + "/evalute-mapping.xlsx"
-export_integration_filename = "evaluation/v"+ str(VERSION) + "/evalute-integration.xlsx"
-final_property_filename = "evaluation/v"+ str(VERSION) + "/final-dict.json"
+config = "evaluation/v_final_2/config.json"
+VERSION = "_final_2"
+export_filename = "evaluation/v"+ VERSION + "/evalute.xlsx"
+export_mapping_dict_filename = "evaluation/v"+ VERSION + "/evalute-mapping.xlsx"
+export_integration_filename = "evaluation/v"+ VERSION + "/evalute-integration.xlsx"
+final_property_filename = "evaluation/v"+ VERSION + "/final-dict.json"
+
+print (export_filename)
 
 with open(config, 'r', encoding="utf8") as f:
   config = json.load(f)

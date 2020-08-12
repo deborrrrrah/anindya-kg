@@ -1,0 +1,1203 @@
+@prefix akgr: <https://deborrrrrah.github.io/resource/> .
+@prefix akgs: <https://deborrrrrah.github.io/ns#> .
+
+akgr:Paragon_Technology_And_Innovation a akgs:Organization ;
+  akgs:name "Paragon Technology And Innovation" .
+
+akgr:Emina a akgs:Brand ;
+  akgs:name "Emina" .
+akgr:Paragon_Technology_And_Innovation akgs:brand akgr:Emina .
+
+akgr:Wardah a akgs:Brand ;
+  akgs:name "Wardah" .
+akgr:Paragon_Technology_And_Innovation akgs:brand akgr:Wardah .
+
+akgr:Martina_Berto a akgs:Organization ;
+  akgs:name "Martina Berto" .
+
+akgr:Sariayu a akgs:Brand ;
+  akgs:name "Sariayu" .
+akgr:Martina_Berto akgs:brand akgr:Sariayu .
+
+akgr:Pac a akgs:Brand ;
+  akgs:name "PAC" .
+akgr:Martina_Berto akgs:brand akgr:Pac .
+
+akgr:Kosmetikatama_Super_Indah a akgs:Organization ;
+  akgs:name "Kosmetikatama Super Indah" .
+
+akgr:Inez a akgs:Brand ;
+  akgs:name "Inez" .
+akgr:Kosmetikatama_Super_Indah akgs:brand akgr:Inez .
+
+akgr:Vitapharm a akgs:Organization ;
+  akgs:name "Vitapharm" .
+
+akgr:Viva a akgs:Brand ;
+  akgs:name "VIVA" .
+akgr:Vitapharm akgs:brand akgr:Viva .
+
+akgr:Emina_Magic_Potion a akgs:Product ;
+  akgs:name "Magic Potion" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "5.5 ml" ;
+  akgs:variant "01 Scarlett" ;
+  akgs:variant "02 Sunglow" ;
+  akgs:variant "03 Smitten" ;
+  akgs:variant "04 Sienna" ;
+  akgs:variant "05 Summer" ;
+  akgs:variant "06 Sassy" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Magic_Potion .
+
+akgr:Emina_Glossy_Stain a akgs:Product ;
+  akgs:name "Glossy Stain" ;
+  akgs:brand akgr:Emina ;
+  akgs:variant "02 Apple Shower" ;
+  akgs:variant "05 Spring Dazzle" ;
+  akgs:variant "03 Candy Rain" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Glossy_Stain .
+
+akgr:Emina_Cheek_Lit_Cream_Blush a akgs:Product ;
+  akgs:name "Cheek Lit Cream Blush" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "10 ml" ;
+  akgs:variant "Pink" ;
+  akgs:variant "Peach" ;
+  akgs:variant "Nudie Brown" ;
+  akgs:variant "Violet" ;
+  akgs:texture "Cream" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Cheek_Lit_Cream_Blush .
+
+akgr:Emina_Beauty_Bliss_Bb_Cream a akgs:Product ;
+  akgs:name "Beauty Bliss Bb Cream" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "20 ml" ;
+  akgs:variant "Light" ;
+  akgs:variant "Caaramel" ;
+  akgs:variant "Natural" ;
+  akgs:usage "Wajah" ;
+  akgs:texture "Cream" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Beauty_Bliss_Bb_Cream .
+
+akgr:Emina_Bare_With_Me_Mineral_Cushion a akgs:Product ;
+  akgs:name "Bare With Me Mineral Cushion" ;
+  akgs:brand akgr:Emina ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Bare_With_Me_Mineral_Cushion .
+
+akgr:Emina_Bright_Stuff_Loose_Powder a akgs:Product ;
+  akgs:name "Bright Stuff Loose Powder" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "55 g" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Bright_Stuff_Loose_Powder .
+
+akgr:Emina_Pore_Ranger a akgs:Product ;
+  akgs:name "Pore Ranger" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "20 ml" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Pore_Ranger .
+
+akgr:Emina_Daily_Matte_Loose_Powder a akgs:Product ;
+  akgs:name "Daily Matte Loose Powder" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "20 g" ;
+  akgs:usage "Wajah" ;
+  akgs:texture "Powder" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Daily_Matte_Loose_Powder .
+
+akgr:Emina_Pop_Rouge_Pressed_Eye_Shadow a akgs:Product ;
+  akgs:name "Pop Rouge Pressed Eye Shadow" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "3.3 g" ;
+  akgs:variant "Blue" ;
+  akgs:variant "Colorful" ;
+  akgs:variant "Gelato" ;
+  akgs:variant "Nude" ;
+  akgs:variant "Purple" ;
+  akgs:variant "Romantic" ;
+  akgs:variant "Posh" ;
+  akgs:variant "Brick" ;
+  akgs:variant "Frosted" ;
+  akgs:usage "Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Pop_Rouge_Pressed_Eye_Shadow .
+
+akgr:Emina_City_Chic_Cc_Cake a akgs:Product ;
+  akgs:name "City Chic Cc Cake" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "12 g" ;
+  akgs:variant "Latte" ;
+  akgs:variant "Butterscotch" ;
+  akgs:variant "Meringue" ;
+  akgs:variant "Peach" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_City_Chic_Cc_Cake .
+
+akgr:Emina_Star_Lash_Aqua_Mascara a akgs:Product ;
+  akgs:name "Star Lash Aqua Mascara" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "5 g" ;
+  akgs:usage "Bulu Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Star_Lash_Aqua_Mascara .
+
+akgr:Emina_Agent_Of_Brow a akgs:Product ;
+  akgs:name "Agent Of Brow" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "1.2 g" ;
+  akgs:variant "Brown" ;
+  akgs:usage "Alis" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Agent_Of_Brow .
+
+akgr:Emina_Eye_Do_Crayon_Pour_Les_Yeux a akgs:Product ;
+  akgs:name "Eye Do Crayon Pour Les Yeux" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "0.20 g" ;
+  akgs:variant "Black" ;
+  akgs:variant "Brown" ;
+  akgs:variant "Deep Purple" ;
+  akgs:texture "Creamy" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Eye_Do_Crayon_Pour_Les_Yeux .
+
+akgr:Emina_Top_Secret_Eyebrow a akgs:Product ;
+  akgs:name "Top Secret Eyebrow" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "2.9 g" ;
+  akgs:usage "Alis" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Top_Secret_Eyebrow .
+
+akgr:Emina_Double_Agent_Eyebrow a akgs:Product ;
+  akgs:name "Double Agent Eyebrow" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "0.25 g" ;
+  akgs:variant "Brown" ;
+  akgs:variant "Black" ;
+  akgs:usage "Alis" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Double_Agent_Eyebrow .
+
+akgr:Emina_Creamatte_Metallic_Edition a akgs:Product ;
+  akgs:name "Creamatte Metallic Edition" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "5.5 g" ;
+  akgs:variant "01 Berry Stardust" ;
+  akgs:variant "02 Sunset Sparks" ;
+  akgs:variant "03 Unicorn Glow" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Creamatte_Metallic_Edition .
+
+akgr:Emina_Soulmatte_Lipstick a akgs:Product ;
+  akgs:name "Soulmatte Lipstick" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "2.3 g" ;
+  akgs:variant "01 Enchantress" ;
+  akgs:variant "02 Unicorn" ;
+  akgs:variant "03 Fairy Fantasy" ;
+  akgs:variant "04 Love Spell" ;
+  akgs:variant "05 Feathers" ;
+  akgs:variant "06 Red Queen" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Soulmatte_Lipstick .
+
+akgr:Emina_Sugar_Rush_Lipstick a akgs:Product ;
+  akgs:name "Sugar Rush Lipstick" ;
+  akgs:brand akgr:Emina ;
+  akgs:variant "01 Pink Velvet" ;
+  akgs:variant "02 Cookie Dough" ;
+  akgs:variant "03 Cherry Bomb" ;
+  akgs:variant "04 Maroon Macaroon" ;
+  akgs:usage "Bibir" ;
+  akgs:texture "Creamy" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Sugar_Rush_Lipstick .
+
+akgr:Emina_Creamytint a akgs:Product ;
+  akgs:name "Creamatte" ;
+  akgs:brand akgr:Emina ;
+  akgs:variant "01 Chocolava" ;
+  akgs:variant "02 Fuzzy Wuzzy" ;
+  akgs:variant "04 Frostbite" ;
+  akgs:variant "05 Flamingo" ;
+  akgs:variant "06 Jelly Bean" ;
+  akgs:variant "07 Tumbleweed" ;
+  akgs:variant "08 Pumpkin Spice" ;
+  akgs:variant "09 Baby Fox" ;
+  akgs:variant "10 Starfish" ;
+  akgs:variant "11 Amazeballs" ;
+  akgs:variant "12 Perky Plum" ;
+  akgs:variant "13 Beet Bites" ;
+  akgs:variant "14 Gingerale" ;
+  akgs:variant "15 Chocopuff" ;
+  akgs:usage "Bibir" ;
+  akgs:texture "Creamy" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Creamytint .
+
+akgr:Emina_Lip_Cushion a akgs:Product ;
+  akgs:name "Lip Cushion" ;
+  akgs:brand akgr:Emina ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Lip_Cushion .
+
+akgr:Emina_Tinted_Lipbalm a akgs:Product ;
+  akgs:name "Tinted Lipbalm" ;
+  akgs:brand akgr:Emina ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Tinted_Lipbalm .
+
+akgr:Emina_Liquid_Lip_Shine a akgs:Product ;
+  akgs:name "Liquid Lip Shine" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "4.5 ml" ;
+  akgs:variant "Buttery Nude" ;
+  akgs:variant "Carnation Pink" ;
+  akgs:variant "Cerise Red" ;
+  akgs:variant "Wineberry" ;
+  akgs:usage "Bibir" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Liquid_Lip_Shine .
+
+akgr:Emina_Smoochies_Lipbalm a akgs:Product ;
+  akgs:name "Smoochies Lipbalm" ;
+  akgs:brand akgr:Emina ;
+  akgs:size "3.5 g" ;
+  akgs:variant "Cucumber Juice" ;
+  akgs:variant "Lemonade" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Emina_Smoochies_Lipbalm .
+
+akgr:Wardah_Everyday_Cheek_Liptint a akgs:Product ;
+  akgs:name "Everyday Cheek Liptint" ;
+  akgs:brand akgr:Wardah ;
+  akgs:variant "01 Red Set Glow" ;
+  akgs:variant "03 Pink On Point" ;
+  akgs:variant "02 My Bearry" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Everyday_Cheek_Liptint .
+
+akgr:Wardah_Exclusive_Matte_Lip_Cream a akgs:Product ;
+  akgs:name "Exclusive Matte Lip Cream" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "4 gr" ;
+  akgs:variant "06 Feeling Red" ;
+  akgs:variant "03 See You Latte" ;
+  akgs:variant "09 Mauve On" ;
+  akgs:variant "11 Oh So Nude" ;
+  akgs:variant "13 Fruit Punch" ;
+  akgs:variant "05 Speachless" ;
+  akgs:variant "08 Pinkcredible" ;
+  akgs:variant "14 My Honey Bee" ;
+  akgs:variant "07 Hello Ruby" ;
+  akgs:variant "17 Rosy Cheek" ;
+  akgs:variant "01 Red Dicted" ;
+  akgs:variant "15 Pinky Plumise" ;
+  akgs:variant "12 Plum It Up" ;
+  akgs:variant "18 Saturdate Night" ;
+  akgs:variant "04 Pink Me" ;
+  akgs:variant "16 Heart Beet" ;
+  akgs:variant "10 Berry Pretty" ;
+  akgs:variant "02 Fuschionately" ;
+  akgs:usage "Bibir" ;
+  akgs:texture "Cream" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Exclusive_Matte_Lip_Cream .
+
+akgr:Wardah_Eyexpert_Eye_Lip_Make_Up_Remover a akgs:Product ;
+  akgs:name "Eyexpert Eye Lip Make Up Remover" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "100 ml" ;
+  akgs:usage "Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eyexpert_Eye_Lip_Make_Up_Remover .
+
+akgr:Wardah_Intense_Matte_Lipstick a akgs:Product ;
+  akgs:name "Intense Matte Lipstick" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "2.3 gr" ;
+  akgs:variant "05 Easy Brownie" ;
+  akgs:variant "02 Blushing Nude" ;
+  akgs:variant "01 Socialite Peach" ;
+  akgs:variant "06 Blooming Pink" ;
+  akgs:variant "08 Retro Red" ;
+  akgs:variant "09 Vibrant Red" ;
+  akgs:variant "12 Lady Burgundy" ;
+  akgs:variant "14 Active Cerise" ;
+  akgs:variant "13 Yummy Brownie" ;
+  akgs:variant "11 Choco Town" ;
+  akgs:variant "07 Passionate Pink" ;
+  akgs:variant "15 Out Of Red" ;
+  akgs:variant "16 Pecan Pie" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Intense_Matte_Lipstick .
+
+akgr:Wardah_Longlasting_Lipstick a akgs:Product ;
+  akgs:name "Lipstick Longlasting" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "2.3 g" ;
+  akgs:variant "01 Fabulous Peach" ;
+  akgs:variant "03 Simply Brown" ;
+  akgs:variant "12 Lustrous Red" ;
+  akgs:variant "10 Stylish Mocca" ;
+  akgs:variant "09 Vibrant Red" ;
+  akgs:variant "13 Classic Brown" ;
+  akgs:variant "02 Pink Sorbet" ;
+  akgs:variant "08 Red Velvet" ;
+  akgs:variant "06 Delicate Pink" ;
+  akgs:variant "05 Fuchsia Fever" ;
+  akgs:variant "16 Smooth Latte" ;
+  akgs:variant "07 Raspberry Hip" ;
+  akgs:variant "11 Cherrie Glam" ;
+  akgs:variant "04 Antique Pink" ;
+  akgs:variant "15 Rouge Red" ;
+  akgs:variant "14 Violet Pink" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Longlasting_Lipstick .
+
+akgr:Wardah_Lipstick_Longlasting a akgs:Product ;
+  akgs:name "Longlasting Lipstick" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "2.3 g" ;
+  akgs:variant "19 Sunrise Nude" ;
+  akgs:variant "18 Sunset Orange" ;
+  akgs:variant "17 Passionate Red" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Lipstick_Longlasting .
+
+akgr:Wardah_Eyexpert_Optimum_Hi_Black_Liner a akgs:Product ;
+  akgs:name "Eyexpert Optimum Hi Black Liner" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "1 g" ;
+  akgs:usage "Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eyexpert_Optimum_Hi_Black_Liner .
+
+akgr:Wardah_Eyexpert_Aqua_Lash_Mascara a akgs:Product ;
+  akgs:name "Eyexpert Aqua Lash Mascara" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "6 g" ;
+  akgs:usage "Bulu Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eyexpert_Aqua_Lash_Mascara .
+
+akgr:Wardah_Eyexpert_Eye_Shadow_Classic a akgs:Product ;
+  akgs:name "Eyexpert Eye Shadow Classic" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "3.3 gr" ;
+  akgs:usage "Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eyexpert_Eye_Shadow_Classic .
+
+akgr:Wardah_Eyexpert_The_Volume_Expert_Mascara a akgs:Product ;
+  akgs:name "Eyexpert The Volume Expert Mascara" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "7 g" ;
+  akgs:usage "Bulu Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eyexpert_The_Volume_Expert_Mascara .
+
+akgr:Wardah_Renew_You_Anti_Aging_Eye_Cream a akgs:Product ;
+  akgs:name "Renew You Anti Aging Eye Cream" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "10 ml" ;
+  akgs:usage "Kantung Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Renew_You_Anti_Aging_Eye_Cream .
+
+akgr:Wardah_Eyexpert_Perfectcurl_Mascara a akgs:Product ;
+  akgs:name "Eyexpert Perfectcurl Mascara" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "7 g" ;
+  akgs:usage "Bulu Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eyexpert_Perfectcurl_Mascara .
+
+akgr:Wardah_Eyexpert_Staylast_Liquid_Eyeliner a akgs:Product ;
+  akgs:name "Eyexpert Staylast Liquid Eyeliner" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "3.5 g" ;
+  akgs:usage "Mata" ;
+  akgs:texture "Cair" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eyexpert_Staylast_Liquid_Eyeliner .
+
+akgr:Wardah_Eye_Shadow a akgs:Product ;
+  akgs:name "Eye Shadow" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "3.3 g" ;
+  akgs:variant "A" ;
+  akgs:variant "G" ;
+  akgs:variant "I" ;
+  akgs:variant "J" ;
+  akgs:usage "Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eye_Shadow .
+
+akgr:Wardah_Eyexpert_Eye_Shadow a akgs:Product ;
+  akgs:name "Eyexpert Eye Shadow" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "3.3 gr" ;
+  akgs:variant "Nude Passionate" ;
+  akgs:usage "Kelopak Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Eyexpert_Eye_Shadow .
+
+akgr:Wardah_Acnederm_Face_Powder a akgs:Product ;
+  akgs:name "Acnederm Face Powder" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "20 g" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Acnederm_Face_Powder .
+
+akgr:Wardah_Blush_On a akgs:Product ;
+  akgs:name "Blush On" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "4 g" ;
+  akgs:variant "C" ;
+  akgs:variant "A" ;
+  akgs:variant "B" ;
+  akgs:usage "Pipi" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Blush_On .
+
+akgr:Wardah_Exclusive_Liquid_Foundation a akgs:Product ;
+  akgs:name "Exclusive Liquid Foundation" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "20 ml" ;
+  akgs:variant "04 Natural" ;
+  akgs:variant "01 Light Beige" ;
+  akgs:variant "03 Sandy Beige" ;
+  akgs:variant "02 Sheer Pink" ;
+  akgs:texture "Liquid" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Exclusive_Liquid_Foundation .
+
+akgr:Wardah_Refill_Exclusive_Two_Way_Cake a akgs:Product ;
+  akgs:name "Refill Exclusive Two Way Cake" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "12 g" ;
+  akgs:variant "04 Natural" ;
+  akgs:variant "02 Light Beige" ;
+  akgs:variant "03 Sandy Beige" ;
+  akgs:variant "01 Sheer Pink" ;
+  akgs:variant "05 Coffee Beige" ;
+  akgs:usage "Wajah" ;
+  akgs:texture "Butiran Powder" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Refill_Exclusive_Two_Way_Cake .
+
+akgr:Wardah_Everyday_Luminous_Compact_Powder a akgs:Product ;
+  akgs:name "Everyday Luminous Compact Powder" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "14 g" ;
+  akgs:variant "04 Natural" ;
+  akgs:variant "02 Beige" ;
+  akgs:variant "01 Light Beige" ;
+  akgs:variant "03 Ivory" ;
+  akgs:texture "Padat" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Everyday_Luminous_Compact_Powder .
+
+akgr:Wardah_Everyday_Luminous_Face_Powder a akgs:Product ;
+  akgs:name "Everyday Luminous Face Powder" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "30 g" ;
+  akgs:variant "01 Light Beige" ;
+  akgs:variant "04 Natural" ;
+  akgs:variant "02 Beige" ;
+  akgs:variant "03 Ivory" ;
+  akgs:texture "Butiran - Butiran" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Everyday_Luminous_Face_Powder .
+
+akgr:Wardah_Refill_Lightening_Powder_Foundation_Light_Feel a akgs:Product ;
+  akgs:name "Refill Lightening Powder Foundation Light Feel" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "12 g" ;
+  akgs:variant "02 Golden Beige" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Refill_Lightening_Powder_Foundation_Light_Feel .
+
+akgr:Wardah_Lightening_Powder_Foundation_Light_Feel a akgs:Product ;
+  akgs:name "Lightening Powder Foundation Light Feel" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "12 g" ;
+  akgs:variant "02 Golden Beige" ;
+  akgs:variant "04 Natural" ;
+  akgs:variant "03 Sheer Pink" ;
+  akgs:variant "01 Light Beige" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Lightening_Powder_Foundation_Light_Feel .
+
+akgr:Wardah_Everyday_Luminous_Liquid_Foundation a akgs:Product ;
+  akgs:name "Everyday Luminous Liquid Foundation" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "40 ml" ;
+  akgs:variant "01 Natural White" ;
+  akgs:variant "04 Natural" ;
+  akgs:variant "03 Beige" ;
+  akgs:variant "02 Light Beige" ;
+  akgs:usage "Wajah" ;
+  akgs:texture "Cair" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Everyday_Luminous_Liquid_Foundation .
+
+akgr:Wardah_Refill_Everyday_Luminous_Two_Way_Cake a akgs:Product ;
+  akgs:name "Refill Everyday Luminous Two Way Cake" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "12 g" ;
+  akgs:variant "01 Light Beige" ;
+  akgs:variant "03 Ivory" ;
+  akgs:variant "02 Beige" ;
+  akgs:variant "04 Light Ivory" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Refill_Everyday_Luminous_Two_Way_Cake .
+
+akgr:Wardah_Everyday_Shine_Free_Bb_Loose_Powder a akgs:Product ;
+  akgs:name "Everyday Shine Free Bb Loose Powder" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "8 g" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Everyday_Shine_Free_Bb_Loose_Powder .
+
+akgr:Wardah_Lightening_Matte_Powder a akgs:Product ;
+  akgs:name "Lightening Matte Powder" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "20 g" ;
+  akgs:variant "03 Ivory" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Lightening_Matte_Powder .
+
+akgr:Wardah_Lightening_Bb_Cake_Powder a akgs:Product ;
+  akgs:name "Lightening Bb Cake Powder" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "11 g" ;
+  akgs:variant "03 Natural" ;
+  akgs:variant "01 Light" ;
+  akgs:variant "02 Sheer Pink" ;
+  akgs:usage "Wajah" ;
+  akgs:texture "Padat" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Lightening_Bb_Cake_Powder .
+
+akgr:Wardah_Everyday_Luminous_Two_Way_Cake a akgs:Product ;
+  akgs:name "Everyday Luminous Two Way Cake" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "12 g" ;
+  akgs:variant "01 Light Beige" ;
+  akgs:variant "04 Light Ivory" ;
+  akgs:variant "03 Ivory" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Everyday_Luminous_Two_Way_Cake .
+
+akgr:Wardah_Instaperfect_Porefection_Skin_Primer a akgs:Product ;
+  akgs:name "Instaperfect Porefection Skin Primer" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "20 ml" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Porefection_Skin_Primer .
+
+akgr:Wardah_Refill_Instaperfect_Mineralight_Matte_Bb_Cushion a akgs:Product ;
+  akgs:name "Refill Instaperfect Mineralight Matte Bb Cushion" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "15 g" ;
+  akgs:variant "13 Beige" ;
+  akgs:variant "11 Fair" ;
+  akgs:variant "14 Crãme" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Refill_Instaperfect_Mineralight_Matte_Bb_Cushion .
+
+akgr:Wardah_Instaperfect_Spotlight_Chromatic_Eye_Palette a akgs:Product ;
+  akgs:name "Instaperfect Spotlight Chromatic Eye Palette" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "10 g" ;
+  akgs:usage "Mata" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Spotlight_Chromatic_Eye_Palette .
+
+akgr:Wardah_Instaperfect_Geniustwist_Matic_Contour_Brow_Brushed a akgs:Product ;
+  akgs:name "Instaperfect Geniustwist Matic Contour Brow Brushed" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "0.25 g" ;
+  akgs:variant "01 Brown" ;
+  akgs:variant "02 Deep Grey" ;
+  akgs:usage "Alis" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Geniustwist_Matic_Contour_Brow_Brushed .
+
+akgr:Wardah_Instaperfect_Hypergetic_Precise_Black_Liner a akgs:Product ;
+  akgs:name "Instaperfect Hypergetic Precise Black Liner" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "1 g" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Hypergetic_Precise_Black_Liner .
+
+akgr:Wardah_Instaperfect_Mattesetter_Lip_Matte_Paint a akgs:Product ;
+  akgs:name "Instaperfect Mattesetter Lip Matte Paint" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "5.5 g" ;
+  akgs:variant "01 Glee" ;
+  akgs:variant "05 Hype" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Mattesetter_Lip_Matte_Paint .
+
+akgr:Wardah_Instaperfect_Quick_Fix_Cover_Correct_Concealer a akgs:Product ;
+  akgs:name "Instaperfect Quick Fix Cover Correct Concealer" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "1.8 g" ;
+  akgs:variant "01 Light" ;
+  akgs:variant "02 Beige" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Quick_Fix_Cover_Correct_Concealer .
+
+akgr:Wardah_Instaperfect_Dynamatic_Microsmooth_Liner a akgs:Product ;
+  akgs:name "Instaperfect Dynamatic Microsmooth Liner" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "0.2 g" ;
+  akgs:usage "Mata" ;
+  akgs:texture "Creamy" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Dynamatic_Microsmooth_Liner .
+
+akgr:Wardah_Instaperfect_Gloss_Chic_Lip_Crayon a akgs:Product ;
+  akgs:name "Instaperfect Gloss Chic Lip Crayon" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "2.7 g" ;
+  akgs:variant "01 Rhythm" ;
+  akgs:variant "02 Clue" ;
+  akgs:variant "03 Mind" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Gloss_Chic_Lip_Crayon .
+
+akgr:Wardah_Instaperfect_Mattetitude_Matte_Stain_Lipstick a akgs:Product ;
+  akgs:name "Instaperfect Mattetitude Matte Stain Lipstick" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "3.5 g" ;
+  akgs:variant "03 Femme" ;
+  akgs:variant "04 Buzz" ;
+  akgs:variant "01 Swing" ;
+  akgs:variant "05 Flux" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Mattetitude_Matte_Stain_Lipstick .
+
+akgr:Wardah_Instaperfect_Mattecentric_Lip_Crayon a akgs:Product ;
+  akgs:name "Instaperfect Mattecentric Lip Crayon" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "3 g" ;
+  akgs:variant "05 Sense" ;
+  akgs:variant "06 Soul" ;
+  akgs:variant "04 Joy" ;
+  akgs:variant "03 Honor" ;
+  akgs:variant "02 Morale" ;
+  akgs:variant "01 Pace" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Instaperfect_Mattecentric_Lip_Crayon .
+
+akgr:Wardah_Refill_Instaperfect_Matte_Fit_Powder_Foundation a akgs:Product ;
+  akgs:name "Refill Instaperfect Matte Fit Powder Foundation" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "13 g" ;
+  akgs:variant "14 Creme" ;
+  akgs:variant "14 Crãme" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Refill_Instaperfect_Matte_Fit_Powder_Foundation .
+
+akgr:Wardah_Colorfit_Velvet_Matte_Lip_Mousse a akgs:Product ;
+  akgs:name "Colorfit Velvet Matte Lip Mousse" ;
+  akgs:brand akgr:Wardah ;
+  akgs:size "4 g" ;
+  akgs:variant "08 Brown Creator" ;
+  akgs:variant "01 Brown Dreamer" ;
+  akgs:variant "05 Artisan Mauve" ;
+  akgs:variant "04 Pink Sweetheart" ;
+  akgs:variant "02 Joyful Orange" ;
+  akgs:variant "03 Rose Ballerina" ;
+  akgs:variant "07 Red Pioneer" ;
+  akgs:variant "06 Fuchsia Lover" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Paragon_Technology_And_Innovation .
+
+akgr:Paragon_Technology_And_Innovation akgs:owns akgr:Wardah_Colorfit_Velvet_Matte_Lip_Mousse .
+
+akgr:Sariayu_Lipstick a akgs:Product ;
+  akgs:name "Lipstick" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Borneo 02" ;
+  akgs:variant "Nias 02" ;
+  akgs:variant "Alun Serunai 01" ;
+  akgs:variant "Petikan Sitar 02" ;
+  akgs:variant "Petikan Sitar 01" ;
+  akgs:variant "Borneo 03" ;
+  akgs:variant "Toba 02" ;
+  akgs:variant "No 5" ;
+  akgs:variant "Marunda 2" ;
+  akgs:variant "Marunda 3" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Lipstick .
+
+akgr:Sariayu_Color_Trend_2019_Lite_Lip_Cream a akgs:Product ;
+  akgs:name "Color Trend 2019 Hydra Lip Tint" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Wi 03" ;
+  akgs:variant "01" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2019_Lite_Lip_Cream .
+
+akgr:Sariayu_Color_Trend_2019_Hydra_Lip_Tint a akgs:Product ;
+  akgs:name "Color Trend 2019 Lite Lip Cream" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Wi 03" ;
+  akgs:variant "Wi 02" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2019_Hydra_Lip_Tint .
+
+akgr:Sariayu_Lip_Care a akgs:Product ;
+  akgs:name "Lip Care" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Lip_Care .
+
+akgr:Sariayu_Color_Trend_2016_Duo_Lip_Color a akgs:Product ;
+  akgs:name "Color Trend 2016 Duo Lip Color" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "K" ;
+  akgs:variant "07" ;
+  akgs:usage "Bibir" ;
+  akgs:texture "Cair" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2016_Duo_Lip_Color .
+
+akgr:Sariayu_Color_Trend_2017_Duo_Lip_Color a akgs:Product ;
+  akgs:name "Color Trend 2017 Duo Lip Color" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Gl 05" ;
+  akgs:variant "Gl 03" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2017_Duo_Lip_Color .
+
+akgr:Sariayu_Color_Trend_2018_Lip_Metallic a akgs:Product ;
+  akgs:name "Color Trend 2018 Lip Metallic" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "J 04" ;
+  akgs:variant "J 01" ;
+  akgs:variant "J 03" ;
+  akgs:variant "J 05" ;
+  akgs:variant "J 02" ;
+  akgs:variant "J 06" ;
+  akgs:variant "J 07" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2018_Lip_Metallic .
+
+akgr:Sariayu_Lip_Colour_Matte a akgs:Product ;
+  akgs:name "Lip Colour Matte" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "05" ;
+  akgs:variant "10" ;
+  akgs:variant "11" ;
+  akgs:variant "01" ;
+  akgs:variant "12" ;
+  akgs:variant "06" ;
+  akgs:variant "07" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Lip_Colour_Matte .
+
+akgr:Sariayu_Ct_19_Lite_Lip_Cream a akgs:Product ;
+  akgs:name "Ct 19 Lite Lip Cream" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Wi 05" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Ct_19_Lite_Lip_Cream .
+
+akgr:Sariayu_Two_Way_Cake a akgs:Product ;
+  akgs:name "Two Way Cake" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "01 Light" ;
+  akgs:variant "02 Natural" ;
+  akgs:variant "03 Dark" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Two_Way_Cake .
+
+akgr:Sariayu_Moisturizer a akgs:Product ;
+  akgs:name "Moisturizer" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Jeruk" ;
+  akgs:usage "Wajah" ;
+  akgs:usage "Leher" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Moisturizer .
+
+akgr:Sariayu_Color_Trend_2020_Lip_Cheek a akgs:Product ;
+  akgs:name "Color Trend 2020 Lip Cheek" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:size "35 gr" ;
+  akgs:variant "S 03 Serene" ;
+  akgs:variant "S 02 Freshly" ;
+  akgs:variant "S 01 Rosy" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2020_Lip_Cheek .
+
+akgr:Sariayu_Two_Way_Cake_Energizing_Aromatic_Refill a akgs:Product ;
+  akgs:name "Two Way Cake Energizing Aromatic Refill" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Putih Langsat" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Two_Way_Cake_Energizing_Aromatic_Refill .
+
+akgr:Sariayu_Alas_Bedak_Energizing_Aromatic a akgs:Product ;
+  akgs:name "Alas Bedak Energizing Aromatic" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Kuning Langsat" ;
+  akgs:variant "Kuning Pengantin" ;
+  akgs:variant "Sawo Matang" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Alas_Bedak_Energizing_Aromatic .
+
+akgr:Sariayu_Color_Trend_2020_Cheek_Palette a akgs:Product ;
+  akgs:name "Color Trend 2020 Cheek Palette" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Peach" ;
+  akgs:variant "Pinkish" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2020_Cheek_Palette .
+
+akgr:Sariayu_Loose_Powder a akgs:Product ;
+  akgs:name "Loose Powder" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Kuning Langsat" ;
+  akgs:variant "Sawo Matang" ;
+  akgs:texture "Butiran" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Loose_Powder .
+
+akgr:Sariayu_Creamy_Foundation a akgs:Product ;
+  akgs:name "Creamy Foundation" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:size "15 g" ;
+  akgs:variant "Kuning Langsat" ;
+  akgs:variant "Kuning Pengantin" ;
+  akgs:variant "Sawo Matang" ;
+  akgs:texture "Cream" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Creamy_Foundation .
+
+akgr:Sariayu_Compact_Powder_Spf_15 a akgs:Product ;
+  akgs:name "Compact Powder Spf 15" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Kuning Pengantin" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Compact_Powder_Spf_15 .
+
+akgr:Sariayu_Compact_Powder a akgs:Product ;
+  akgs:name "Compact Powder" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Kuning Langsat" ;
+  akgs:texture "Padat" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Compact_Powder .
+
+akgr:Sariayu_Alas_Bedak a akgs:Product ;
+  akgs:name "Alas Bedak" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Sawo Matang" ;
+  akgs:texture "Liquid" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Alas_Bedak .
+
+akgr:Sariayu_Bedak_Jerawat_Energizing_Aromatic a akgs:Product ;
+  akgs:name "Bedak Jerawat Energizing Aromatic" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Bedak_Jerawat_Energizing_Aromatic .
+
+akgr:Sariayu_Refill_Two_Way_Cake a akgs:Product ;
+  akgs:name "Refill Two Way Cake" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "03 Dark" ;
+  akgs:variant "01 Light" ;
+  akgs:variant "02 Natural" ;
+  akgs:usage "Wajah" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Refill_Two_Way_Cake .
+
+akgr:Sariayu_Blush_On a akgs:Product ;
+  akgs:name "Blush On" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Apokayan" ;
+  akgs:variant "Merah Delima" ;
+  akgs:usage "Pipi" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Blush_On .
+
+akgr:Sariayu_Color_Trend_2015_Eyeliner_Pencil a akgs:Product ;
+  akgs:name "Color Trend 2015 Eyeliner Pencil" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "P 02" ;
+  akgs:variant "P 03" ;
+  akgs:variant "Hitam" ;
+  akgs:variant "Putih" ;
+  akgs:usage "Mata" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2015_Eyeliner_Pencil .
+
+akgr:Sariayu_Color_Trend_2020_Eye_Makeup_Kit a akgs:Product ;
+  akgs:name "Color Trend 2020 Eye Makeup Kit" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2020_Eye_Makeup_Kit .
+
+akgr:Sariayu_Pensil_Alis_Pro a akgs:Product ;
+  akgs:name "Pensil Alis Pro" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Hitam Legam" ;
+  akgs:variant "Brown" ;
+  akgs:variant "Black" ;
+  akgs:variant "Coklat Sawo Matang" ;
+  akgs:usage "Alis" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Pensil_Alis_Pro .
+
+akgr:Sariayu_Color_Trend_2016_Eye_Shadow a akgs:Product ;
+  akgs:name "Color Trend 2019 Eye Shadow" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Wi 01" ;
+  akgs:variant "Wi 02" ;
+  akgs:usage "Kelopak Mata" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2016_Eye_Shadow .
+
+akgr:Sariayu_Color_Trend_2015_Mascara a akgs:Product ;
+  akgs:name "Color Trend 2015 Mascara" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:size "6.5 gr" ;
+  akgs:variant "Papua" ;
+  akgs:usage "Bulu Mata" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2015_Mascara .
+
+akgr:Sariayu_Color_Trend_18_Eye_Shadow_Kit a akgs:Product ;
+  akgs:name "Color Trend 16 Eye Shadow Kit" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Krakatau" ;
+  akgs:usage "Kelopak Mata" ;
+  akgs:texture "Powder" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_18_Eye_Shadow_Kit .
+
+akgr:Sariayu_Color_Trend_16_Eye_Shadow_Kit a akgs:Product ;
+  akgs:name "Color Trend 18 Eye Shadow Kit" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Jakarta" ;
+  akgs:usage "Bibir" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_16_Eye_Shadow_Kit .
+
+akgr:Sariayu_Trend_Warna_2011_Moistpome_Eye_Shadow a akgs:Product ;
+  akgs:name "Trend Warna 2011 Moistpome Eye Shadow" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Petikan Sitar" ;
+  akgs:usage "Kelopak Mata" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Trend_Warna_2011_Moistpome_Eye_Shadow .
+
+akgr:Sariayu_Color_Trend_Warna_2011_Moistpome_Eye_Shadow_Palette a akgs:Product ;
+  akgs:name "Color Trend Warna 2011 Moistpome Eye Shadow Palette" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:usage "Kelopak Mata" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_Warna_2011_Moistpome_Eye_Shadow_Palette .
+
+akgr:Sariayu_Duo_Eye_Make_Up a akgs:Product ;
+  akgs:name "Duo Eye Make Up" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Hitam" ;
+  akgs:usage "Bulu Mata" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Duo_Eye_Make_Up .
+
+akgr:Sariayu_Color_Trend_2017_Liquid_Eye_Shadow a akgs:Product ;
+  akgs:name "Color Trend 2017 Liquid Eye Shadow" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Gili Lombok" ;
+  akgs:variant "Gl 06" ;
+  akgs:variant "Gl 02" ;
+  akgs:usage "Mata" ;
+  akgs:texture "Cair" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2017_Liquid_Eye_Shadow .
+
+akgr:Sariayu_Color_Trend_2019_Eye_Shadow a akgs:Product ;
+  akgs:name "Color Trend 2016 Eye Shadow" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "K 01" ;
+  akgs:usage "Kelopak Mata" ;
+  akgs:texture "Powder" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2019_Eye_Shadow .
+
+akgr:Sariayu_Color_Trend_2017_Eye_Shadow_Kit a akgs:Product ;
+  akgs:name "Color Trend 2017 Eye Shadow Kit" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "Gili Lombok" ;
+  akgs:texture "Powder" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_2017_Eye_Shadow_Kit .
+
+akgr:Sariayu_Color_Trend_16_Eyeshadow a akgs:Product ;
+  akgs:name "Color Trend 16 Eyeshadow" ;
+  akgs:brand akgr:Sariayu ;
+  akgs:variant "K 02" ;
+  akgs:usage "Kelopak Mata" ;
+  akgs:texture "Powder" ;
+  akgs:manufacturer akgr:Martina_Berto .
+
+akgr:Martina_Berto akgs:owns akgr:Sariayu_Color_Trend_16_Eyeshadow .
+
