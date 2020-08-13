@@ -2,7 +2,8 @@
     "preprocess" : {
         "capitalize" : ["NamaProduk", "Penggunaan", "Tekstur", "Merek", "Varian"],
         "removed-punct" : ["Varian", "NamaProduk"],
-        "lowercase" : ["Ukuran"]
+        "lowercase" : ["Ukuran"],
+        "stem" : ["Penggunaan"]
     },
     "property-cardinality" : {
         "single-value" : ["NamaProduk", "Merek", "Ukuran"],
@@ -60,7 +61,7 @@
         "name-property" : "akgs:name",
         "product-properties-text" : ["name", "texture", "usage", "size", "variant"]
     },
-    "data-source" : ["data/shopee-label.json", "data/tokped_esw-label.json"],
+    "data-source" : ["data/shopee-label.json"],
     "mapping-result" : "results/v_final_1/mapping-result.json",
     "mapping-dict" : "results/v_final_1/mapping-dictionary.json",
     "mapping-eval" : "results/v_final_1/mapping-eval.json",

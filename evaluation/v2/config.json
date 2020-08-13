@@ -2,7 +2,8 @@
     "preprocess" : {
         "capitalize" : ["NamaProduk", "Penggunaan", "Tekstur", "Merek", "Varian"],
         "removed-punct" : ["Varian", "NamaProduk"],
-        "lowercase" : ["Ukuran"]
+        "lowercase" : ["Ukuran"],
+        "stem" : ["Penggunaan"]
     },
     "property-cardinality" : {
         "single-value" : ["NamaProduk", "Tekstur", "Merek", "Ukuran"],

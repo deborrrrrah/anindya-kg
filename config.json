@@ -61,12 +61,12 @@
         "name-property" : "akgs:name",
         "product-properties-text" : ["name", "texture", "usage", "size", "variant"]
     },
-    "data-source" : ["data/shopee-label.json", "data/tokped_esw-label.json"],
-    "mapping-result" : "results/v_final_2/mapping-result.json",
-    "mapping-dict" : "results/v_final_2/mapping-dictionary.json",
-    "mapping-eval" : "results/v_final_2/mapping-eval.json",
-    "integrate-result" : "results/v_final_2/integrate-result.json",
-    "integrate-dict" : "results/v_final_2/integrate-dict.json",
-    "integrate-eval" : "results/v_final_2/integrate-eval.json",
-    "knowledge-graph" : "query/result-v_final_2.ttl"
+    "data-source" : ["data/shopee-label.json"],
+    "mapping-result" : "results/v_final_1/mapping-result.json",
+    "mapping-dict" : "results/v_final_1/mapping-dictionary.json",
+    "mapping-eval" : "results/v_final_1/mapping-eval.json",
+    "integrate-result" : "results/v_final_1/integrate-result.json",
+    "integrate-dict" : "results/v_final_1/integrate-dict.json",
+    "integrate-eval" : "results/v_final_1/integrate-eval.json",
+    "knowledge-graph" : "query/result-v_final_1.ttl"
 }
