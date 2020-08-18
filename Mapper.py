@@ -154,6 +154,9 @@ class Mapper :
       text = list(text)
       preprocessed_text = text[0]
 
+      if key in self.config['preprocess']['stem'] :
+        preprocessed_text = self.__stem(preprocessed_text)
+
       if key in self.config['preprocess']['capitalize'] :
         preprocessed_text = self.__capitalize(preprocessed_text)
         
@@ -162,9 +165,6 @@ class Mapper :
       
       if key in self.config['preprocess']['lowercase'] :
         preprocessed_text = self.__lowercase(preprocessed_text)
-
-      if key in self.config['preprocess']['stem'] :
-        preprocessed_text = self.__stem(preprocessed_text)
 
       preprocessed_text = self.__remove_whitespace(preprocessed_text)
 
