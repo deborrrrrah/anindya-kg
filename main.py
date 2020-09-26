@@ -8,7 +8,7 @@ with open(config, 'r', encoding="utf8") as f:
   config = json.load(f)
 
 with open(config['data-source'], 'r', encoding="utf8") as f:
-  dataset = json.load(f) 
+  dataset = json.load(f)
 
 preprocess_list = config['preprocess']
 
