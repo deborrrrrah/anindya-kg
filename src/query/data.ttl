@@ -1,0 +1,22 @@
+@prefix akgr: <https://deborrrrrah.github.io/resource/> .
+@prefix akgs: <https://deborrrrrah.github.io/ns#> .
+
+akgr:Emina a akgs:Merk .
+
+akgr:LipCreamMatte a akgs:Produk ;
+  akgr:nama "Lip Cream Matte" ;
+  akgs:ukuran "5.5 gr" ;
+  akgs:varian "1 Chocolava" ;
+  akgs:varian "2 Fuzzy Wuzzy" ;
+  akgs:varian "3 Mauvelous" ;
+  akgs:penggunaan "Bibir" .
+
+akgr:Emina akgs:memproduksi akgr:LipCreamMatte .
+
+akgr:SmoochiesLipBalm a akgs:Produk ;
+  akgr:nama "Smoochies Lip Balm" ;
+  akgs:varian "Cucumber Juice" ;
+  akgs:varian "Lemonade" ;
+  akgs:penggunaan "Bibir" .
+
+akgr:Emina akgs:memproduksi akgr:SmoochiesLipBalm .

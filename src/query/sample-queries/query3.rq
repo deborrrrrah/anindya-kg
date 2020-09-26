@@ -1,0 +1,6 @@
+PREFIX akgs: <https://deborrrrrah.github.io/ns#> 
+PREFIX akgr: <https://deborrrrrah.github.io/resource/> 
+
+DESCRIBE ?product
+WHERE
+{ akgr:ParagonTechnologyAndInnovation akgs:produces ?product .}  
