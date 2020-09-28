@@ -1,2 +1,0 @@
-query/apache-jena-3.14.0/bin/arq --data query/result.ttl --query query/query/query1.rq
-sparql.bat --data query/result.ttl --query query/query/query1.rq

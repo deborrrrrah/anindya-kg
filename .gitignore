@@ -130,3 +130,6 @@ dmypy.json
 
 src/query/apache-jena-3.14.0
 src/query/apache-jena-3.15.0
+
+# Model files
+**/**.pth
