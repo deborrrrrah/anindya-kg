@@ -15,8 +15,8 @@ python -m ensurepip
 python -m pip install -U pip
 ```
 2. `pip install -r requirements.txt` to install the packages that will be used by the codes.
-
-3. Setup the src/config.json. Then run main.py
+3. To predict product text, run src/modelling/Predict-version-final.ipynb and set your own variables.
+4. To run the extracted information mapping to knowledge graph do this steps. Setup the src/config.json. Then run main.py
 ```
 python main.py
 ```
