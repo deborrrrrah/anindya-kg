@@ -4,7 +4,7 @@ import json
 The Property_X name should be the same as in the ontology. Brand_X and Product_X name should be unique.
 Value of the property is string, and so the multivalue property is list of strings.
 
-JSON FORMAT 
+JSON FORMAT
 {
   "Organization_1" : [
       {
@@ -49,7 +49,7 @@ class Builder :
     self.source_file = None
     self.destination_file = None
     self.multi_value_properties = multi_value_properties
-  
+
   def buildKG(self) :
     print ('Initializing KG building ...')
 
@@ -63,7 +63,7 @@ class Builder :
     DOT = "."
     ENTER = "\n"
     APOSTROPHE = "\""
-    
+
     # Read source file
     with open(self.source, 'r') as self.source_file:
       source_object = json.loads(self.source_file.read())
@@ -71,7 +71,7 @@ class Builder :
     # Brand declaration
     for (brand, items) in source_object.items() :
       self.content += RESOURCE_URI + brand + ' a ' + BRAND_CLASS + SPACE + DOT + ENTER + ENTER
-      
+
       # Item declaration and its properties
       for item in items :
         for (item_name, item_description) in item.items() :
@@ -83,10 +83,10 @@ class Builder :
               break
             else : self.content += SEMICOLON + ENTER + SPACE + SPACE + SEMANTIC_URI + item_property_key + SPACE + APOSTROPHE + item_property_val + APOSTROPHE + SPACE
           self.content += DOT + ENTER + ENTER
-          
+
           # Item relationsship to brand
-          self.content += RESOURCE_URI + brand + SPACE + PRODUCE_PREDICATE + SPACE + RESOURCE_URI + item_name + SPACE + DOT + ENTER + ENTER    
-    
+          self.content += RESOURCE_URI + brand + SPACE + PRODUCE_PREDICATE + SPACE + RESOURCE_URI + item_name + SPACE + DOT + ENTER + ENTER
+
     print ('Writing KG to', self.destination)
     # Write content into destination file
     self.destination_file = open(self.destination, "w+")

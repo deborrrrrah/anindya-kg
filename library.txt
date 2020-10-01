@@ -1,2 +1,0 @@
-pip install translate
-pip install -U strsimpy

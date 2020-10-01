@@ -40,7 +40,7 @@
         "Ukuran" : ["subset", "algorithm jaccard 1"],
         "URI" : ["algorithm cosine 0.95"]
     },
-    "data-source" : "data/shopee-v2-onscope.json",
+    "data-source" : "resources/shopee-v2.json",
     "mapping-result" : "results/mapping-result.json",
     "mapping-dict" : "results/mapping-dictionary.json",
     "mapping-eval" : "results/mapping-eval.json",
